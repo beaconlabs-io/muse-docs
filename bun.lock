@@ -2,15 +2,15 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "docs-muse-temp",
+      "name": "docs-muse",
       "dependencies": {
         "@docusaurus/core": "3.9.2",
         "@docusaurus/preset-classic": "3.9.2",
         "@mdx-js/react": "^3.0.0",
         "clsx": "^2.0.0",
         "prism-react-renderer": "^2.3.0",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0"
+        "react": "^19.2.1",
+        "react-dom": "^19.2.1"
       },
       "devDependencies": {
         "@docusaurus/module-type-aliases": "3.9.2",
@@ -3663,10 +3663,10 @@
     ],
 
     "@types/send": [
-      "@types/send@0.17.6",
+      "@types/send@1.2.1",
       "",
-      { "dependencies": { "@types/mime": "^1", "@types/node": "*" } },
-      "sha512-Uqt8rPBE8SY0RK8JB1EzVOIZ32uqy8HwdxCnoCOsYrvnswqmFZ/k+9Ikidlk/ImhsdvBsloHbAlewb2IEBV/Og=="
+      { "dependencies": { "@types/node": "*" } },
+      "sha512-arsCikDvlU99zl1g69TcAB3mzZPpxgw0UQnaHeC1Nwb015xp8bknZv5rIfri9xTOcMuaVgvabfIRA7PSZVuZIQ=="
     ],
 
     "@types/serve-index": [
@@ -11567,6 +11567,13 @@
       "sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA=="
     ],
 
+    "@types/serve-static/@types/send": [
+      "@types/send@0.17.6",
+      "",
+      { "dependencies": { "@types/mime": "^1", "@types/node": "*" } },
+      "sha512-Uqt8rPBE8SY0RK8JB1EzVOIZ32uqy8HwdxCnoCOsYrvnswqmFZ/k+9Ikidlk/ImhsdvBsloHbAlewb2IEBV/Og=="
+    ],
+
     "accepts/negotiator": [
       "negotiator@0.6.3",
       "",
@@ -12731,13 +12738,6 @@
       "sha512-lks+lVC8dgGyh97jxvxeYTWQFvh4uw4yC12gVl63Cg30sjPX4wuGcdkICVXDAESr6OJGjqGA8Iz5mkeN6zlD7A=="
     ],
 
-    "serve-index/mime-types": [
-      "mime-types@2.1.18",
-      "",
-      { "dependencies": { "mime-db": "~1.33.0" } },
-      "sha512-lc/aahn+t4/SWV/qcmumYjymLsWfN3ELhpmVuUFjgsORruuZPVSwAQryq+HHGvO/SI2KVX26bx+En+zhM8g8hQ=="
-    ],
-
     "serve-static/send": [
       "send@0.19.0",
       "",
@@ -13186,13 +13186,6 @@
       "",
       {},
       "sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA=="
-    ],
-
-    "serve-index/mime-types/mime-db": [
-      "mime-db@1.33.0",
-      "",
-      {},
-      "sha512-BHJ/EKruNIqJf/QahvxwQZXKygOQ256myeN/Ew+THcAa5q+PjyTTMMeNQC4DZw5AwfvelsUrA6B67NKMqXDbzQ=="
     ],
 
     "serve-static/send/debug": [
