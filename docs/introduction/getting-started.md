@@ -45,7 +45,7 @@ That's it! You've created an evidence-based Theory of Change.
 
 ---
 
-**Next Steps:**
+<!-- **Next Steps:**
 
 - [Learn about Theory of Change →](./theory-of-change)
-- [Start creating your first logic model →](../user-guide/creating-logic-model)
+- [Start creating your first logic model →](../user-guide/creating-logic-model) -->

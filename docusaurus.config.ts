@@ -105,14 +105,14 @@ const config: Config = {
               label: "Getting Started",
               to: "/docs/introduction/getting-started",
             },
-            {
-              label: "User Guide",
-              to: "/docs/user-guide/creating-logic-model",
-            },
-            {
-              label: "Developer Docs",
-              to: "/docs/developers/getting-started",
-            },
+            // {
+            //   label: "User Guide",
+            //   to: "/docs/user-guide/creating-logic-model",
+            // },
+            // {
+            //   label: "Developer Docs",
+            //   to: "/docs/developers/getting-started",
+            // },
           ],
         },
         {
