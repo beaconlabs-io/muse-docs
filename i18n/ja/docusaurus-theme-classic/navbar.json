@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Muse",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Beacon Labs ロゴ",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "ドキュメント",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Launch App": {
+    "message": "アプリを開く",
+    "description": "Navbar item with label Launch App"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

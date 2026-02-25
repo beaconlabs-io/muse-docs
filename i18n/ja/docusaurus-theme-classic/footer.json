@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "ドキュメント",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Application": {
+    "message": "アプリケーション",
+    "description": "The title of the footer links column with title=Application in the footer"
+  },
+  "link.title.Community": {
+    "message": "コミュニティ",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.Getting Started": {
+    "message": "はじめに",
+    "description": "The label of footer link with label=Getting Started linking to /docs/introduction/getting-started"
+  },
+  "link.item.label.User Guide": {
+    "message": "ユーザーガイド",
+    "description": "The label of footer link with label=User Guide linking to /docs/user-guide/canvas-overview"
+  },
+  "link.item.label.Muse App": {
+    "message": "Muse App",
+    "description": "The label of footer link with label=Muse App linking to https://muse.beaconlabs.io"
+  },
+  "link.item.label.Dev App": {
+    "message": "開発版アプリ",
+    "description": "The label of footer link with label=Dev App linking to https://dev.muse.beaconlabs.io"
+  },
+  "link.item.label.X": {
+    "message": "X",
+    "description": "The label of footer link with label=X linking to https://x.com/beaconlabs_io"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/beaconlabs-io/muse"
+  },
+  "link.item.label.Beacon Labs": {
+    "message": "Beacon Labs",
+    "description": "The label of footer link with label=Beacon Labs linking to https://beaconlabs.io"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Beacon Labs. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

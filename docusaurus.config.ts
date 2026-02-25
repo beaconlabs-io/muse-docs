@@ -27,12 +27,19 @@ const config: Config = {
 
   onBrokenLinks: "throw",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "ja"],
+    localeConfigs: {
+      en: {
+        label: "English",
+        htmlLang: "en-US",
+      },
+      ja: {
+        label: "日本語",
+        htmlLang: "ja",
+      },
+    },
   },
 
   presets: [
@@ -84,6 +91,10 @@ const config: Config = {
           label: "Documentation",
         },
         {
+          type: "localeDropdown",
+          position: "right",
+        },
+        {
           href: "https://muse.beaconlabs.io",
           label: "Launch App",
           position: "right",
@@ -105,25 +116,21 @@ const config: Config = {
               label: "Getting Started",
               to: "/docs/introduction/getting-started",
             },
-            // {
-            //   label: "User Guide",
-            //   to: "/docs/user-guide/creating-logic-model",
-            // },
-            // {
-            //   label: "Developer Docs",
-            //   to: "/docs/developers/getting-started",
-            // },
+            {
+              label: "User Guide",
+              to: "/docs/user-guide/canvas-overview",
+            },
           ],
         },
         {
           title: "Application",
           items: [
             {
-              label: "Muse App (Mainnet)",
+              label: "Muse App",
               href: "https://muse.beaconlabs.io",
             },
             {
-              label: "Testnet",
+              label: "Dev App",
               href: "https://dev.muse.beaconlabs.io",
             },
           ],
