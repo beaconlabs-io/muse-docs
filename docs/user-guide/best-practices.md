@@ -28,7 +28,8 @@ The highest scores in accuracy evaluations were achieved with prompts combining 
 | **Goal** | What do you want to achieve? (e.g., enable sustainable development) |
 | **Activity** | What specifically will you do? (e.g., implement a grant program) |
 
-> **💡 Tip**  
+> **💡 Tip**
+> 
 > Even if you don’t include all elements, having just “Target + Problem” dramatically stabilizes the structure of the generated logic.
 
 ## 3. Three Tips to Improve Accuracy
@@ -73,7 +74,9 @@ The quality of your generated logic model depends on how clearly you describe yo
 **Mention the context if it matters:**
 - Examples: *"in Sub-Saharan Africa"*, *"for K-12 students"*, *"using mobile technology"*
 
-> **💡 Tip**   More Detail = Better Results
+> **💡 Tip**
+> 
+> More Detail = Better Results
 > The AI does its best work when it has a clear picture of what you're doing and who you're doing it for. A well-written two or three sentences will produce a much richer logic model than a vague five-word phrase.
 
 ---
