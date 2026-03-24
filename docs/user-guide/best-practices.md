@@ -54,6 +54,28 @@ If you want to create a model specialized for a specific domain (e.g., OSS, heal
 | I want to achieve sustainable OSS development. | Goal | Medium |
 | I want to implement a grant program. | Activity | Low |
 
+## Additional Tips
+
+The quality of your generated logic model depends on how clearly you describe your intervention. Here are some tips:
+
+**Be specific about your population:**
+- Less effective: *"helping people"*
+- More effective: *"supporting unemployed adults aged 18–35 in rural communities"*
+
+**Name the intervention clearly:**
+- Less effective: *"a program to improve health"*
+- More effective: *"a community health worker program delivering door-to-door maternal care services"*
+
+**Include the hoped-for change:**
+- Less effective: *"food security"*
+- More effective: *"reducing food insecurity by connecting low-income families with local food banks and nutrition education"*
+
+**Mention the context if it matters:**
+- Examples: *"in Sub-Saharan Africa"*, *"for K-12 students"*, *"using mobile technology"*
+
+> **💡 Tip**   More Detail = Better Results
+> The AI does its best work when it has a clear picture of what you're doing and who you're doing it for. A well-written two or three sentences will produce a much richer logic model than a vague five-word phrase.
+
 ---
 
 ## Summary: Quick Check
