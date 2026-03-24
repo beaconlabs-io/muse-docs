@@ -76,29 +76,6 @@ Once generation is complete, the dialog closes and your logic model appears on t
 Green arrows are special — they indicate that a peer-reviewed research study supports that causal link. You can click on a green arrow to see what evidence is attached.
 :::
 
-## Writing Better Prompts
-
-The quality of your generated logic model depends on how clearly you describe your intervention. Here are some tips:
-
-**Be specific about your population:**
-- Less effective: *"helping people"*
-- More effective: *"supporting unemployed adults aged 18–35 in rural communities"*
-
-**Name the intervention clearly:**
-- Less effective: *"a program to improve health"*
-- More effective: *"a community health worker program delivering door-to-door maternal care services"*
-
-**Include the hoped-for change:**
-- Less effective: *"food security"*
-- More effective: *"reducing food insecurity by connecting low-income families with local food banks and nutrition education"*
-
-**Mention the context if it matters:**
-- Examples: *"in Sub-Saharan Africa"*, *"for K-12 students"*, *"using mobile technology"*
-
-:::tip More Detail = Better Results
-The AI does its best work when it has a clear picture of what you're doing and who you're doing it for. A well-written two or three sentences will produce a much richer logic model than a vague five-word phrase.
-:::
-
 ## After Generation: Refining Your Model
 
 The AI-generated logic model is a starting point, not a finished product. You are expected to review and refine it:
