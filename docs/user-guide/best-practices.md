@@ -21,61 +21,68 @@ The biggest tip for creating a good logic model is to **describe “what problem
 
 The highest scores in accuracy evaluations were achieved with prompts combining the following elements:
 
-| Element | Example |
-| :--- | :--- |
-| **Target** | Who is facing the issue? (e.g., OSS developers, local residents) |
-| **Problem** | What difficulties currently exist? (e.g., sustainable development is difficult) |
-| **Goal** | What do you want to achieve? (e.g., enable sustainable development) |
-| **Activity** | What specifically will you do? (e.g., implement a grant program) |
+| Element      | Example                                                                         |
+| :----------- | :------------------------------------------------------------------------------ |
+| **Target**   | Who is facing the issue? (e.g., OSS developers, local residents)                |
+| **Problem**  | What difficulties currently exist? (e.g., sustainable development is difficult) |
+| **Goal**     | What do you want to achieve? (e.g., enable sustainable development)             |
+| **Activity** | What specifically will you do? (e.g., implement a grant program)                |
 
 > **💡 Tip**
-> 
+>
 > Even if you don’t include all elements, having just “Target + Problem” dramatically stabilizes the structure of the generated logic.
 
 ## 3. Three Tips to Improve Accuracy
 
 ### ① Ensure Causal Validity
+
 Aim for a structure without logical leaps, such as:
 “Funding → Increased development time → Project sustainability.”  
 By clearly stating the Problem, the AI can propose a “minimal structure directly linked to the solution.”
 
 ### ② Prevent “Strategy Bloat”
+
 If only the Goal is provided, the AI enters a “strategy exploration mode,” listing broadly appealing ideas. This often introduces unnecessary elements like mentoring or events. The more you want to narrow the output, the more important it is to include a concrete Problem.
 
 ### ③ Maintain Context Consistency
+
 If you want to create a model specialized for a specific domain (e.g., OSS, healthcare, education), include relevant terminology and background in the prompt. This prevents the AI from losing context midway (e.g., shifting from IT topics to community support).
 
 ## 4. Prompt Comparison Examples
 
-| Prompt Example | Components | Accuracy |
-|---|---|---|
-| OSS developers currently face the problem of being unable to sustain development. Therefore, to achieve sustainable OSS development, I want to implement a grant program. | Target + Problem + Goal + Activity | High |
-| OSS developers currently face the problem of being unable to sustain development. | Target + Problem | High |
-| To achieve sustainable OSS development, I want to implement a grant program. | Goal + Activity | Medium |
-| I want to achieve sustainable OSS development. | Goal | Medium |
-| I want to implement a grant program. | Activity | Low |
+| Prompt Example                                                                                                                                                            | Components                         | Accuracy |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------- |
+| OSS developers currently face the problem of being unable to sustain development. Therefore, to achieve sustainable OSS development, I want to implement a grant program. | Target + Problem + Goal + Activity | High     |
+| OSS developers currently face the problem of being unable to sustain development.                                                                                         | Target + Problem                   | High     |
+| To achieve sustainable OSS development, I want to implement a grant program.                                                                                              | Goal + Activity                    | Medium   |
+| I want to achieve sustainable OSS development.                                                                                                                            | Goal                               | Medium   |
+| I want to implement a grant program.                                                                                                                                      | Activity                           | Low      |
 
 ## Additional Tips
 
 The quality of your generated logic model depends on how clearly you describe your intervention. Here are some tips:
 
 **Be specific about your population:**
-- Less effective: *"helping people"*
-- More effective: *"supporting unemployed adults aged 18–35 in rural communities"*
+
+- Less effective: _"helping people"_
+- More effective: _"supporting unemployed adults aged 18–35 in rural communities"_
 
 **Name the intervention clearly:**
-- Less effective: *"a program to improve health"*
-- More effective: *"a community health worker program delivering door-to-door maternal care services"*
+
+- Less effective: _"a program to improve health"_
+- More effective: _"a community health worker program delivering door-to-door maternal care services"_
 
 **Include the hoped-for change:**
-- Less effective: *"food security"*
-- More effective: *"reducing food insecurity by connecting low-income families with local food banks and nutrition education"*
+
+- Less effective: _"food security"_
+- More effective: _"reducing food insecurity by connecting low-income families with local food banks and nutrition education"_
 
 **Mention the context if it matters:**
-- Examples: *"in Sub-Saharan Africa"*, *"for K-12 students"*, *"using mobile technology"*
+
+- Examples: _"in Sub-Saharan Africa"_, _"for K-12 students"_, _"using mobile technology"_
 
 > **💡 Tip**
-> 
+>
 > More Detail = Better Results
 > The AI does its best work when it has a clear picture of what you're doing and who you're doing it for. A well-written two or three sentences will produce a much richer logic model than a vague five-word phrase.
 
@@ -85,8 +92,8 @@ The quality of your generated logic model depends on how clearly you describe yo
 
 Check whether your prompt includes the following:
 
-* [ ] **Who (Target)** is facing the problem?
-* [ ] **What (Problem)** is the issue?
-* [ ] **What action (Activity)** will be taken to solve it?
+- [ ] **Who (Target)** is facing the problem?
+- [ ] **What (Problem)** is the issue?
+- [ ] **What action (Activity)** will be taken to solve it?
 
 ---

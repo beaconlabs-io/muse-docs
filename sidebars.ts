@@ -26,6 +26,7 @@ const sidebars: SidebarsConfig = {
         "user-guide/saving-sharing",
         "user-guide/hypercerts",
         "user-guide/wallet-connection",
+        "user-guide/best-practices",
       ],
     },
     {
