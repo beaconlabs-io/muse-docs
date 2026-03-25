@@ -1,10 +1,10 @@
 ---
 sidebar_position: 2
-title: AI-Powered Generation
+title: How to Use MUSE
 description: How to generate a complete, evidence-linked logic model using AI in MUSE
 ---
 
-# AI-Powered Generation
+# How to Use MUSE
 
 One of MUSE's most powerful features is its ability to generate a complete, evidence-linked logic model from a plain-language description of your program. Instead of building each node by hand, you simply describe what your intervention does — and the AI handles the rest.
 
