@@ -44,15 +44,15 @@ Practice and experiment without real blockchain costs:
 - **Network**: Base Sepolia (test network)
 - **Use for**: Learning, testing features, practice minting Hypercerts
 
-:::tip Recommended for First-Time Users
-Start with the **dev app** to explore MUSE's features without any costs. Once you're comfortable, switch to the production app for your real impact work.
+:::info Language Support
+MUSE is available in **English** and **Japanese**. Use the globe icon in the navigation bar to switch languages at any time.
 :::
 
 ## Quick Start: Your First 5 Minutes
 
 1. **Visit the App** — Go to [muse.beaconlabs.io](https://muse.beaconlabs.io) (or the [dev app](https://dev.muse.beaconlabs.io))
 2. **Navigate to Canvas** — Click "Canvas" in the top navigation bar
-3. **Generate with AI** — Click the "Generate from Intent" button and describe your intervention
+3. **Generate with AI** — Click the "Generate Logic Model" button and describe your intervention
    - Example: *"OSS impact on Ethereum ecosystem"*
    - Example: *"Reducing food insecurity in urban communities"*
 4. **Review Your Logic Model** — In about 40 seconds, you'll see:

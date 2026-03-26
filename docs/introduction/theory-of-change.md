@@ -1,10 +1,10 @@
 ---
 sidebar_position: 2
-title: Theory of Change
-description: Understanding the Theory of Change methodology used in MUSE
+title: What is a Logic Model?
+description: Understanding logic models and the Theory of Change methodology used in MUSE
 ---
 
-# Theory of Change
+# What is a Logic Model?
 
 Theory of Change (ToC) is a methodology for planning, monitoring, and evaluating interventions. It describes the causal pathway from activities to long-term impact, helping you articulate *how* and *why* your program will achieve its intended outcomes.
 

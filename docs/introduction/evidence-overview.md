@@ -104,7 +104,7 @@ An **EAS (Ethereum Attestation Service)** attestation is created for each verifi
 
 Together, IPFS and EAS ensure that the evidence in MUSE cannot be silently altered or removed after verification.
 
-For a non-technical introduction to these concepts, see [Blockchain Basics →](./blockchain-basics).
+For a non-technical introduction to these concepts, see the [Glossary](../reference/glossary).
 
 ## How Evidence Connects to Your Logic Model
 
@@ -132,4 +132,4 @@ Not every connection in your logic model will have evidence attached. This is no
 - [Search the evidence library →](../user-guide/evidence-search)
 - [Understand effect categories →](../reference/effect-categories)
 - [Understand evidence strength →](../reference/strength-of-evidence)
-- [Learn about blockchain verification →](./blockchain-basics)
+

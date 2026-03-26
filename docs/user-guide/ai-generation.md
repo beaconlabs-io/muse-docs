@@ -10,7 +10,7 @@ One of MUSE's most powerful features is its ability to generate a complete, evid
 
 ## How It Works
 
-When you click "Generate from Intent," MUSE's AI:
+When you click "Generate Logic Model," MUSE's AI:
 
 1. Reads your description and identifies the core intervention
 2. Constructs a full logic model with nodes at every stage (Activities through Impact)
@@ -29,9 +29,9 @@ Go to [muse.beaconlabs.io/canvas](https://muse.beaconlabs.io/canvas) or click **
 If you already have nodes on the canvas, the AI will add to what's there. If you want a clean slate, go to **More → Clear All** before generating.
 :::
 
-### Step 2: Click "Generate from Intent"
+### Step 2: Click "Generate Logic Model"
 
-In the toolbar at the top of the canvas, click the **"Generate from Intent"** button (the one with the robot icon). A dialog box will appear.
+In the toolbar at the top of the canvas, click the **"Generate Logic Model"** button (the one with the robot icon). A dialog box will appear.
 
 ### Step 3: Describe Your Intervention
 
@@ -49,22 +49,31 @@ Your description should answer: *What does your program do, for whom, and what c
 
 > "Providing coding bootcamps to unemployed adults in rural areas to improve employment outcomes"
 
-### Step 4: Click "Generate"
+### Step 4: (Optional) Enable External Paper Search
+
+Below the text box, you may see a toggle labeled **"Search external academic papers."** When enabled, MUSE will also search [Semantic Scholar](https://www.semanticscholar.org/) for additional academic papers related to your logic model's causal connections.
+
+:::info About External Papers
+External papers are shown as **reference material only** — they are not scored by MUSE's AI and do not receive blockchain attestations. They supplement the curated evidence database with broader academic literature, including TLDR summaries and citation counts to help you quickly assess relevance.
+:::
+
+### Step 5: Click "Generate"
 
 Once you're happy with your description, click the **"Generate"** button. The dialog will show a live progress tracker.
 
-### Step 5: Watch the Progress
+### Step 6: Watch the Progress
 
-The AI works in four steps, and you'll see each one tick off as it completes:
+The AI works through the following steps, and you'll see each one tick off as it completes:
 
 | Step | What's Happening |
 |------|-----------------|
-| **Step 1: Analyzing intent** | The AI reads your description and understands the core intervention |
+| **Step 1: Analyzing goal** | The AI reads your description and understands the core intervention |
 | **Step 2: Generating logic model** | The AI constructs the full set of nodes and causal connections |
-| **Step 3: Illustrating canvas with evidence** | The AI searches the evidence database and links relevant research to your causal arrows |
-| **Step 4: Completed!** | Your logic model is ready |
+| **Step 3: Searching for supporting evidence** | The AI searches the evidence database and links relevant research to your causal arrows |
+| **Step 4: Searching external academic papers** | *(Only when enabled)* The AI searches Semantic Scholar for additional papers |
+| **Step 5: Completed!** | Your logic model is ready |
 
-### Step 6: Review Your Logic Model
+### Step 7: Review Your Logic Model
 
 Once generation is complete, the dialog closes and your logic model appears on the canvas. You'll see:
 
@@ -93,12 +102,20 @@ AI-generated content reflects patterns in the evidence database and may not perf
 
 ## What If Generation Fails?
 
-If the generation dialog shows an error or gets stuck:
+If the generation encounters an issue, MUSE will display a specific error message:
+
+| Error Type | What It Means | What To Do |
+|------------|---------------|------------|
+| **High demand** | The AI model is currently busy | Wait a moment and try again |
+| **Rate limit** | Too many requests in a short time | Wait a minute before retrying |
+| **Timeout** | The operation took too long | Try a simpler description, or try again later |
+| **Invalid input** | Issue with the description | Modify your description and try again |
+
+If the error persists:
 
 1. Close the dialog
 2. Check your internet connection
-3. Try again with a slightly different or more detailed description
-4. If the problem persists, try the [dev version](https://dev.muse.beaconlabs.io) to see if the issue is isolated to the production environment
+3. Try the [dev version](https://dev.muse.beaconlabs.io) to see if the issue is isolated to the production environment
 
 ## Next Steps
 

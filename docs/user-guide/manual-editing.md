@@ -138,4 +138,3 @@ If your canvas gets crowded:
 
 - [Search for evidence to support your connections →](./evidence-search)
 - [Save and share your logic model →](./saving-sharing)
-- [Mint a Hypercert for your impact claim →](./hypercerts)

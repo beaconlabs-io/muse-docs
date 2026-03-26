@@ -10,7 +10,6 @@ const sidebars: SidebarsConfig = {
         "introduction/getting-started",
         "introduction/theory-of-change",
         "introduction/evidence-overview",
-        "introduction/blockchain-basics",
       ],
     },
     {
@@ -24,8 +23,6 @@ const sidebars: SidebarsConfig = {
         "user-guide/evidence-search",
         "user-guide/evidence-detail",
         "user-guide/saving-sharing",
-        "user-guide/hypercerts",
-        "user-guide/wallet-connection",
         "user-guide/best-practices",
       ],
     },
