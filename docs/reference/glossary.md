@@ -34,6 +34,14 @@ MUSE's interactive workspace for building Logic Models. The canvas is powered by
 
 ---
 
+### Citation Count
+
+**Japanese**: 引用数
+
+The number of times an academic paper has been cited by other papers. In MUSE, citation counts are displayed on external paper cards in the evidence dialog and are used to rank papers by quality. Higher citation counts generally indicate greater influence in the academic community.
+
+---
+
 ### EAS
 
 **Japanese**: EAS（イーサリアム・アテステーション・サービス）
@@ -62,7 +70,23 @@ The observed outcome or impact of an intervention as reported in a research stud
 
 **Japanese**: エビデンスカード
 
-A standardized format for presenting a single piece of research evidence in MUSE. Each Evidence Card captures the core finding of a study as an **Intervention → Indicator → Short-term Outcome** relationship, along with the effect category and strength-of-evidence rating. Evidence Cards can be attached to nodes on the canvas to ground a Logic Model in empirical research.
+A standardized format for presenting a single piece of research evidence in MUSE. Each Evidence Card captures the core finding of a study as an **Intervention → Indicator → Short-term Outcome** relationship, along with the effect category and strength-of-evidence rating. Evidence Cards can be attached to nodes on the canvas to ground a Logic Model in empirical research. Note: Evidence Cards are distinct from External Papers — curated evidence is scored by AI and backed by blockchain attestations, while external papers are shown as reference material only.
+
+---
+
+### External Paper
+
+**Japanese**: 外部学術論文
+
+An academic paper retrieved from external databases (such as Semantic Scholar) that is displayed alongside curated evidence as reference material. External papers are not scored by MUSE's AI and do not receive blockchain attestations. They provide supplementary context from the broader academic literature, including TLDR summaries and citation counts to help users quickly assess relevance.
+
+---
+
+### Goal
+
+**Japanese**: ゴール
+
+The plain-language description of what you want to achieve, which you provide to MUSE's AI to generate a logic model. A clear, well-structured goal that includes the target population, problem, and desired change produces the best results.
 
 ---
 
@@ -78,7 +102,7 @@ The transaction cost paid to the blockchain network when performing an on-chain 
 
 **Japanese**: ハイパーサート
 
-An on-chain impact certificate that represents a verified claim of social impact. In MUSE, Logic Models can be used to generate Hypercerts that document the evidence base underlying a program's impact claims. Hypercerts are minted on the blockchain and provide a publicly verifiable, persistent record of impact for funders, evaluators, and beneficiaries.
+An on-chain impact certificate that represents a verified claim of social impact. In MUSE, Logic Models can be used to generate Hypercerts that document the evidence base underlying a program's impact claims. Hypercerts are minted on the blockchain and provide a publicly verifiable, persistent record of impact for funders, evaluators, and beneficiaries. In the Japanese interface, Hypercerts are displayed as "インパクト証明書" (Impact Certificate).
 
 ---
 
@@ -151,6 +175,14 @@ The direct products or deliverables that result from carrying out Activities. Ou
 **Japanese**: RCT（ランダム化比較試験）
 
 Randomized Controlled Trial. The gold standard of experimental research, corresponding to Level 5 on the Maryland SMS. In an RCT, participants are randomly assigned to either an intervention group or a control group. Random assignment ensures that — on average — the two groups are equivalent at baseline, allowing researchers to attribute any subsequent difference in outcomes to the intervention itself. RCT evidence provides the highest degree of causal confidence available.
+
+---
+
+### Semantic Scholar
+
+**Japanese**: Semantic Scholar（セマンティック・スカラー）
+
+An AI-powered academic search engine developed by the Allen Institute for AI. MUSE can optionally search Semantic Scholar to find academic papers related to causal connections in your logic model. Papers from Semantic Scholar appear as reference material (External Papers) and are distinct from MUSE's curated, attested evidence.
 
 ---
 

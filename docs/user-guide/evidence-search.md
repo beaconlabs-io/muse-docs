@@ -16,12 +16,7 @@ You'll see a search bar at the top and a grid of evidence cards below, showing a
 
 ## Keyword Search
 
-Type any word or phrase into the search bar to filter the evidence by content. The search looks across:
-
-- **Titles** of the research papers
-- **Content** of the evidence summaries
-
-As you type, the results update in real time. The result count at the top of the grid ("X of Y") updates to show how many studies match your current search.
+Type any word or phrase into the search bar to filter evidence by title. As you type, the results update in real time. The result count at the top of the grid updates to show how many studies match your current search.
 
 **Search tips:**
 
@@ -49,14 +44,14 @@ Studies that found no effect are just as important as those that found positive 
 
 The **Strength** filter lets you filter by the quality and rigor of the research methodology. MUSE uses the **Maryland Scientific Methods Scale (SMS)**, a 0–5 star rating system widely used in evidence-based practice.
 
-| Level | Stars | What It Means |
-|-------|-------|---------------|
-| **Level 0** | No stars | Mathematical models or theoretical analyses — no empirical data |
-| **Level 1** | 1 star | Simple before-and-after comparison with no control group |
-| **Level 2** | 2 stars | Comparison between two groups, but not randomly assigned |
-| **Level 3** | 3 stars | Comparison with a control group using statistical controls for confounders |
-| **Level 4** | 4 stars | Quasi-experimental design with strong controls (e.g., difference-in-differences) |
-| **Level 5** | 5 stars | Randomized Controlled Trial (RCT) — the gold standard of evidence |
+| Level | Filter Label | Stars | What It Means |
+|-------|-------------|-------|---------------|
+| **Level 0** | Mathematical Model | No stars | Mathematical models or theoretical analyses — no empirical data |
+| **Level 1** | Basic Comparison | 1 star | Simple before-and-after comparison with no control group |
+| **Level 2** | Controlled Comparison | 2 stars | Comparison between two groups, but not randomly assigned |
+| **Level 3** | Quasi-experimental | 3 stars | Comparison with a control group using statistical controls for confounders |
+| **Level 4** | Randomized Design | 4 stars | Quasi-experimental design with strong controls (e.g., difference-in-differences) |
+| **Level 5** | RCT | 5 stars | Randomized Controlled Trial (RCT) — the gold standard of evidence |
 
 You can select one or more strength levels to filter. For example, if you want only the most rigorous evidence, select Level 4 and Level 5.
 
@@ -68,20 +63,18 @@ Higher-strength evidence is more rigorous, but lower-strength evidence is not wo
 
 Each result appears as a card in the grid. Here's what you'll see on each card:
 
-- **Title** — The name of the research paper or evidence entry
+- **Title** — The name of the research paper or evidence entry (clickable to open the detail page)
 - **Author** — Who produced the research
-- **Strength stars** — The quality rating (0–5 stars)
-- **Key results** — A short summary of what the research found
-- **Effect type icon** — A visual indicator of whether the effect was positive, negative, mixed, etc.
+- **Publication date and Strength stars** — When it was published and the quality rating (0–5 stars)
+- **Results** — Up to 2 structured Intervention → Outcome pairs, each with an effect type icon (positive, no effect, mixed, side effect, or unclear). If there are more than 2 results, a "+X more results" indicator is shown
 - **Tags** — Topic categories that describe the evidence (e.g., "health", "education", "economic development")
-- **Intervention → Outcome pairs** — Each card may show one or more results, each showing what intervention was studied and what outcome was measured
 
 ## Viewing Full Evidence
 
 Click on any evidence card to open the full Evidence Detail page for that study. There you'll find the complete research summary, methodology details, data sources, citations, and blockchain attestation records.
 
 :::info How Evidence Links to Your Canvas
-When MUSE's AI generates a logic model, it searches this same database and automatically links relevant evidence to causal connections. Green arrows on your canvas mean the AI found a matching evidence card for that specific link. You can use the Evidence Search page to explore that evidence or find additional studies to support your model.
+When MUSE's AI generates a logic model, it searches this same database and automatically links relevant evidence to causal connections. Green arrows on your canvas mean the AI found a matching evidence card for that specific link. If external paper search was enabled during generation, academic papers from Semantic Scholar may also appear alongside curated evidence when you click a green arrow. You can use the Evidence Search page to explore curated evidence or find additional studies to support your model.
 :::
 
 ## Using the Result Count
@@ -90,6 +83,8 @@ At the top of the results grid, you'll see a count like **"12 of 47 results"**. 
 
 - **47** — Total number of evidence entries in the database
 - **12** — Number of entries that match your current search and filter combination
+
+When filters are active, the count also shows how many filters are applied (e.g., "2 filters active"). You can click **"Clear all filters"** to reset all search and filter criteria at once.
 
 If the count drops to zero, try removing some filters or broadening your search terms.
 

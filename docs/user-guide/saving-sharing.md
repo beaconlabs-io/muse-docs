@@ -109,6 +109,4 @@ Clearing the canvas removes all nodes and edges permanently from local storage. 
 
 ## Next Steps
 
-- [Mint a Hypercert for your logic model →](./hypercerts)
-- [Connect a wallet for blockchain features →](./wallet-connection)
 - [Go back to editing your canvas →](./canvas-overview)

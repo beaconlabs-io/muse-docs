@@ -83,24 +83,24 @@ Knowing the data source helps you assess:
 
 ## Citations
 
-The Citations section is a full bibliography of all the works referenced in this evidence entry. If you want to read the original research paper or verify the findings, you can find the full citation here and look up the source directly.
+The Citations section lists all the works referenced in this evidence entry. Citations that include a URL are displayed as clickable buttons that open the source directly. Other citations are listed as text. If you want to read the original research paper or verify the findings, you can find the full citation here.
 
 ## Tags
 
 Tags are topic categories that describe the evidence. Examples include tags like "health", "education", "economic development", "gender equity", or "digital technology". Tags help you understand the domain and context of the evidence at a glance, and they are also searchable on the Evidence Search page.
 
-## Attestation History
+## Change Log
 
-At the bottom of the evidence page is the Attestation History section. This shows the blockchain verification records for this evidence entry.
+At the bottom of the evidence page is the Change Log section. This shows the blockchain verification records for this evidence entry.
 
-Each attestation record includes:
+Each record includes:
 
-- **EAS UID** — A unique identifier on the Ethereum Attestation Service (EAS) blockchain, which permanently and publicly records this evidence entry
+- **EAS UID** — A unique identifier on the Ethereum Attestation Service (EAS) blockchain, which permanently and publicly records this evidence entry (clickable link to view on EAS)
 - **Timestamp** — The exact date and time the attestation was created
-- **Verification status** — Whether the attestation can be confirmed on-chain
+- **Latest badge** — The most recent attestation is marked with a "Latest" badge
 
 :::info What Is an Attestation?
-An attestation is a cryptographic signature recorded on a public blockchain that says: "This evidence entry existed in this exact form at this point in time." It makes evidence tamper-resistant and independently verifiable — anyone can check the EAS UID on the blockchain to confirm the record is authentic. Learn more in [Blockchain Basics](../introduction/blockchain-basics).
+An attestation is a cryptographic signature recorded on a public blockchain that says: "This evidence entry existed in this exact form at this point in time." It makes evidence tamper-resistant and independently verifiable — anyone can check the EAS UID on the blockchain to confirm the record is authentic.
 :::
 
 ## Evaluating Evidence Quality

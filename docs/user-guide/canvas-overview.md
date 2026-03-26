@@ -18,7 +18,7 @@ At the top of the canvas, you'll find the main toolbar with all the controls you
 
 | Button | What It Does |
 |--------|--------------|
-| **Generate from Intent** | Opens the AI generation dialog — describe your program and let AI build the logic model for you |
+| **Generate Logic Model** | Opens the AI generation dialog — describe your program and let AI build the logic model for you |
 | **Add Logic** | Opens a side panel to manually add a new node to the canvas |
 | **More** | A dropdown menu with additional actions (see below) |
 
@@ -55,7 +55,9 @@ Arrows on the canvas represent **causal connections** between nodes — the clai
 - **Regular arrows (gray/white)** — A causal connection you've asserted in your model
 - **Green arrows** — A causal connection that is backed by linked research evidence
 
-When you see a green arrow, it means peer-reviewed research supports that specific step in your causal chain. This is one of MUSE's most powerful features: turning assumptions into evidence-backed claims.
+When you see a green arrow, it means peer-reviewed research supports that specific step in your causal chain. Click on a green arrow to open a dialog showing the linked evidence. If external paper search was enabled during generation, you may also see academic papers from Semantic Scholar displayed as reference material alongside the curated evidence.
+
+This is one of MUSE's most powerful features: turning assumptions into evidence-backed claims.
 
 ## Navigating the Canvas
 
