@@ -12,6 +12,17 @@ The Canvas is the heart of MUSE. It's your interactive workspace where you build
 Navigate to [muse.beaconlabs.io/canvas](https://muse.beaconlabs.io/canvas) or click **"Canvas"** in the top navigation bar.
 :::
 
+## Canvas and Recipe Tabs
+
+The canvas view is split into two tabs at the top:
+
+- **Canvas** — the interactive React Flow workspace where you build, edit, and connect nodes.
+- **Recipe** — the [Measurement Recipe](./recipe) view. Once you've generated a recipe, this tab shows practitioner-ready measurement guidance for every metric on your Output and Outcome cards.
+
+A small dot appears on the Recipe tab while a recipe is generating, and an amber warning icon appears when the recipe is *stale* (the logic model has changed since it was generated).
+
+The unified toolbar below the tabs shows actions relevant to whichever tab is active.
+
 ## The Toolbar
 
 At the top of the canvas, you'll find the main toolbar with all the controls you need:
@@ -19,17 +30,28 @@ At the top of the canvas, you'll find the main toolbar with all the controls you
 | Button | What It Does |
 |--------|--------------|
 | **Generate Logic Model** | Opens the AI generation dialog — describe your program and let AI build the logic model for you |
-| **Add Logic** | Opens a side panel to manually add a new node to the canvas |
+| **Add Node** | Opens the centered Node Editor Dialog to manually add a new node to the canvas |
 | **More** | A dropdown menu with additional actions (see below) |
 
 ### The "More" Dropdown Menu
 
-Click **More** to access these additional actions:
+Click **More** to access additional actions, grouped by section:
 
+**Canvas**
+
+- **Auto Layout** — Re-tidy the arrangement of nodes into a left-to-right layout (the same pass that runs automatically after AI generation)
 - **Mint Hypercert** — Create a blockchain-verified impact certificate from your logic model
 - **Save to IPFS** — Upload your logic model to decentralized storage and get a shareable link
-- **Export Image** — Download a PNG screenshot of your entire canvas
+- **Export Image** — Download a PNG screenshot of your entire canvas (a small "MUSE" credit is embedded in the corner so the export is traceable when shared externally)
 - **Export JSON** — Download the raw logic model data as a file
+
+**Recipe**
+
+- **Regenerate** — Re-run the [Measurement Recipe](./recipe) agent against the current metrics
+- **Download HTML** — Download the current Recipe as a self-contained HTML file (disabled until a recipe has been generated successfully)
+
+**Danger Zone**
+
 - **Clear All** — Remove everything from the canvas and start fresh
 
 ## The Five Node Types
@@ -78,7 +100,7 @@ Once nodes are on the canvas, you can interact with them in several ways:
 | Action | How To Do It |
 |--------|--------------|
 | **Select a node** | Click on it once — it will highlight with a selection border |
-| **Edit a node** | Double-click on it, or hover and click the pencil icon that appears |
+| **Edit a node** | Double-click on it, or hover and click the pencil icon that appears — both open the centered Node Editor Dialog |
 | **Move a node** | Click and drag it to a new position |
 | **Delete a node** | Select it and press the **Delete** or **Backspace** key |
 | **Connect two nodes** | Drag from the small dot (handle) on the right edge of one node to the handle on the left edge of another |
@@ -108,5 +130,6 @@ MUSE currently stores one canvas per browser. If you want to preserve your work 
 ## Next Steps
 
 - [Generate a logic model with AI →](./ai-generation)
+- [Turn your metrics into a Measurement Recipe →](./recipe)
 - [Add and edit nodes manually →](./manual-editing)
 - [Save and share your canvas →](./saving-sharing)

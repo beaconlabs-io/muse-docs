@@ -57,11 +57,21 @@ Below the text box, you may see a toggle labeled **"Search external academic pap
 External papers are shown as **reference material only** — they are not scored by MUSE's AI and do not receive blockchain attestations. They supplement the curated evidence database with broader academic literature, including TLDR summaries and citation counts to help you quickly assess relevance.
 :::
 
-### Step 5: Click "Generate"
+### Step 5: (Optional) Enable Measurement Recipe Generation
+
+You'll also see a second toggle labeled **"Also generate measurement recipe."** When enabled, MUSE runs the [Measurement Recipe](./recipe) agent immediately after the logic model is built, producing a practitioner-ready measurement guide for every Output and Outcome metric in one streaming run.
+
+This is the recommended path when you're generating a logic model from scratch — you get the outline and the operational measurement plan in a single session, in the same language you wrote the goal in.
+
+:::info Recipe requires metrics
+The Recipe toggle is only meaningful when the AI generates metrics for Output and Outcome cards. If you turn metric generation off, the Recipe toggle is disabled — there would be nothing for the Recipe to describe.
+:::
+
+### Step 6: Click "Generate"
 
 Once you're happy with your description, click the **"Generate"** button. The dialog will show a live progress tracker.
 
-### Step 6: Watch the Progress
+### Step 7: Watch the Progress
 
 The AI works through the following steps, and you'll see each one tick off as it completes:
 
@@ -70,12 +80,13 @@ The AI works through the following steps, and you'll see each one tick off as it
 | **Step 1: Analyzing goal** | The AI reads your description and understands the core intervention |
 | **Step 2: Generating logic model** | The AI constructs the full set of nodes and causal connections |
 | **Step 3: Searching for supporting evidence** | The AI searches the evidence database and links relevant research to your causal arrows |
-| **Step 4: Searching external academic papers** | *(Only when enabled)* The AI searches Semantic Scholar for additional papers |
-| **Step 5: Completed!** | Your logic model is ready |
+| **Step 4: Searching external academic papers** | *(Only when the external-papers toggle is on)* The AI searches Semantic Scholar for additional papers |
+| **Step 5: Generating measurement recipe** | *(Only when the Recipe toggle is on)* The Recipe agent generates measurement guidance for every Output and Outcome metric |
+| **Step 6: Completed!** | Your logic model is ready |
 
-### Step 7: Review Your Logic Model
+### Step 8: Review Your Logic Model
 
-Once generation is complete, the dialog closes and your logic model appears on the canvas. You'll see:
+Once generation is complete, the dialog closes and your logic model appears on the canvas, arranged left-to-right by **Auto Layout**. You'll see:
 
 - **Color-coded nodes** for each stage: Activities (orange), Outputs (green), Short-term Outcomes (blue), Intermediate Outcomes (yellow), and Impact (purple)
 - **Causal arrows** connecting the stages in a left-to-right flow
@@ -84,6 +95,12 @@ Once generation is complete, the dialog closes and your logic model appears on t
 :::info About Green Arrows
 Green arrows are special — they indicate that a peer-reviewed research study supports that causal link. You can click on a green arrow to see what evidence is attached.
 :::
+
+:::tip Re-tidying the layout later
+The **Auto Layout** pass runs once, right after generation. If you drag nodes around later and want to reset the arrangement, open the **More** menu → **Auto Layout** to run it again.
+:::
+
+If you enabled the Recipe toggle, switch to the **Recipe tab** at the top of the canvas view to browse the generated measurement guidance. See [Measurement Recipe →](./recipe) for what's in it and how to download it as HTML.
 
 ## After Generation: Refining Your Model
 
@@ -119,6 +136,7 @@ If the error persists:
 
 ## Next Steps
 
+- [Turn the generated metrics into a Measurement Recipe →](./recipe)
 - [Add or edit nodes manually →](./manual-editing)
 - [Search the evidence database →](./evidence-search)
 - [Save and share your canvas →](./saving-sharing)

@@ -1,12 +1,12 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 title: Saving & Sharing
-description: How to save, export, and share your logic models in MUSE
+description: How to save, export, and share your logic models and measurement recipes in MUSE
 ---
 
 # Saving & Sharing
 
-Once you've built a logic model you're proud of, MUSE gives you several ways to preserve and share it. You can save it permanently to IPFS for a shareable link, export it as an image for presentations, download the raw data as JSON, or simply rely on the automatic local browser save.
+Once you've built a logic model you're proud of, MUSE gives you several ways to preserve and share it. You can save it permanently to IPFS for a shareable link, export it as an image for presentations, download the raw data as JSON, hand off the [Measurement Recipe](./recipe) to program operators as HTML, or simply rely on the automatic local browser save.
 
 ## Automatic Local Save
 
@@ -63,8 +63,10 @@ Export your entire canvas as a PNG image file that you can use in presentations,
 
 The exported image captures your **entire canvas** — not just the portion visible on screen. Even if parts of your logic model are off-screen, the full model will be included in the export.
 
+A small **"MUSE" credit** is embedded in the corner of the exported PNG. This is intentional — it keeps the export traceable back to MUSE when it's shared externally or included in reports.
+
 :::tip Best Practices for Image Export
-Before exporting, zoom out and use the minimap to make sure all your nodes are arranged the way you want them to appear. The export reflects the current arrangement of your canvas.
+Before exporting, zoom out and use the minimap to make sure all your nodes are arranged the way you want them to appear. The export reflects the current arrangement of your canvas. If the layout has drifted from editing, run **More → Auto Layout** first to tidy it up.
 :::
 
 ## Export as JSON
@@ -81,6 +83,23 @@ The JSON file contains all nodes (with their types, titles, descriptions, and me
 
 :::info Who Is JSON Export For?
 JSON export is primarily for technical users — developers, data analysts, or researchers who want to work with the logic model data programmatically. If you just need to share your model with stakeholders, the IPFS link or image export is easier.
+:::
+
+## Download the Measurement Recipe as HTML
+
+If you've generated a [Measurement Recipe](./recipe) for your canvas, you can hand it off to program operators as a self-contained HTML file.
+
+### How to Download the Recipe
+
+1. Make sure a recipe has been generated (the Recipe tab shows recipe content, not an empty state).
+2. Click the **"More"** button in the toolbar.
+3. Under the **Recipe** section, click **"Download HTML"**.
+4. A single `.html` file downloads to your browser's downloads folder.
+
+The file is fully self-contained — no external assets are needed to view it — so it can be emailed, shared over messaging, or archived as-is.
+
+:::info When Download HTML is disabled
+If the Recipe has never been generated, or the previous generation failed, the **Download HTML** menu item is disabled. Switch to the Recipe tab and generate one first.
 :::
 
 ## Clear All
@@ -103,10 +122,12 @@ Clearing the canvas removes all nodes and edges permanently from local storage. 
 | Share with a colleague or stakeholder | Save to IPFS → Copy the URL |
 | Use in a slide deck or report | Export as Image |
 | Back up your work or use the data elsewhere | Export as JSON |
+| Hand a measurement plan to a program operator | Generate Recipe → Download HTML |
 | Continue working on another device | Save to IPFS → Open the URL on the other device |
 | Post on social media | Save to IPFS → Share to X |
 | Start over | Clear All (after saving if needed) |
 
 ## Next Steps
 
+- [Generate a Measurement Recipe for your metrics →](./recipe)
 - [Go back to editing your canvas →](./canvas-overview)
