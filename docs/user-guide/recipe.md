@@ -53,6 +53,8 @@ You can also **regenerate** an existing Recipe at any time from the **More** men
 
 The Recipe is organized by parent card type — **Outputs**, **Short-term Outcomes**, then **Intermediate Outcomes** — and for each metric it produces the following block:
 
+![Recipe view showing the MUSE Recipe title, a Stale banner ("The logic model has changed"), and the Outputs section with a metric card containing Target value, Measurement steps, Data collection method, and Cautions.](/img/screenshots/en/recipe-view.png)
+
 | Field | What it is |
 |-------|------------|
 | **Metric name** | Copied verbatim from your logic model. |

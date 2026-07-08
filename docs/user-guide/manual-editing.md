@@ -21,6 +21,8 @@ To add a node manually:
 
 The Node Editor Dialog is the same interface used for both **adding a new node** and **editing an existing one**. It's split into two sections:
 
+![Node Editor Dialog with a two-column layout: on the left, Node Information (Type, Title, Description); on the right, Metrics with one metric card expanded showing name and description fields.](/img/screenshots/en/node-editor-dialog.png)
+
 **Left column — basic info:**
 
 - **Type** (required) — Pick one of the five node types from the dropdown.

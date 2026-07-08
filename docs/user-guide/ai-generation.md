@@ -63,6 +63,8 @@ You'll also see a second toggle labeled **"Also generate measurement recipe."** 
 
 This is the recommended path when you're generating a logic model from scratch — you get the outline and the operational measurement plan in a single session, in the same language you wrote the goal in.
 
+![Generate Logic Model dialog with the Options section expanded, showing three toggles: Search external academic papers, Generate metrics for each card (enabled), and Also generate recipe (enabled).](/img/screenshots/en/generate-dialog-toggles.png)
+
 :::info Recipe requires metrics
 The Recipe toggle is only meaningful when the AI generates metrics for Output and Outcome cards. If you turn metric generation off, the Recipe toggle is disabled — there would be nothing for the Recipe to describe.
 :::

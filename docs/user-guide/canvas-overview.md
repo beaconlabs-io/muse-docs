@@ -23,6 +23,8 @@ A small dot appears on the Recipe tab while a recipe is generating, and an amber
 
 The unified toolbar below the tabs shows actions relevant to whichever tab is active.
 
+![Canvas view with the Canvas / Recipe tabs at the top, showing a populated logic model. The Recipe tab shows an amber stale icon because the logic model has changed since the recipe was last generated.](/img/screenshots/en/canvas-recipe-tabs.png)
+
 ## The Toolbar
 
 At the top of the canvas, you'll find the main toolbar with all the controls you need:
@@ -36,6 +38,8 @@ At the top of the canvas, you'll find the main toolbar with all the controls you
 ### The "More" Dropdown Menu
 
 Click **More** to access additional actions, grouped by section:
+
+![More menu open, grouped into three sections: Canvas (Auto Layout, Mint Hypercert, Save to IPFS, Export Image, Export JSON), Recipe (Regenerate, Download HTML), and Danger (Clear All).](/img/screenshots/en/more-menu.png)
 
 **Canvas**
 
