@@ -77,7 +77,7 @@ Intervention effects show heterogeneity in many cases. Results are classified as
 Indicates that unintended effects other than the intervention's intended outcomes were observed. In many cases, these are statistically significant and represent practically undesirable effects of considerable magnitude.
 
 **When this applies**:
-- The intervention produced outcomes that were not part of the original theory of change.
+- The intervention produced outcomes that were not part of the original logic model.
 - These unintended outcomes are adverse — that is, they represent harm or deterioration in some dimension.
 - The unintended effects are large enough to be practically meaningful, not just statistically detectable noise.
 

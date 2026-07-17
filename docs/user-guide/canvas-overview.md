@@ -6,7 +6,7 @@ description: Overview of the interactive canvas — MUSE's main workspace for bu
 
 # Canvas Overview
 
-The Canvas is the heart of MUSE. It's your interactive workspace where you build, visualize, and refine your logic model (Theory of Change). Everything connects here — from AI-generated frameworks to manually crafted program pathways.
+The Canvas is the heart of MUSE. It's your interactive workspace where you build, visualize, and refine your logic model. Everything connects here — from AI-generated frameworks to manually crafted program pathways.
 
 :::tip Where to Find It
 Navigate to [muse.beaconlabs.io/canvas](https://muse.beaconlabs.io/canvas) or click **"Canvas"** in the top navigation bar.
@@ -81,7 +81,7 @@ Arrows on the canvas represent **causal connections** between nodes — the clai
 - **Regular arrows (gray/white)** — A causal connection you've asserted in your model
 - **Green arrows** — A causal connection that is backed by linked research evidence
 
-When you see a green arrow, it means peer-reviewed research supports that specific step in your causal chain. Click on a green arrow to open a dialog showing the linked evidence. If external paper search was enabled during generation, you may also see academic papers from Semantic Scholar displayed as reference material alongside the curated evidence.
+When you see a green arrow, it means research evidence supports that specific step in your causal chain. Click on a green arrow to open a dialog showing the linked evidence. If external paper search was enabled during generation, you may also see academic papers from Semantic Scholar displayed as reference material alongside the curated evidence.
 
 ![The evidence dialog opened from a green arrow, listing the linked research evidence that backs the causal connection between two nodes.](/img/screenshots/en/evidence-dialog.png)
 

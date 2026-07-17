@@ -8,7 +8,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         "introduction/getting-started",
-        "introduction/theory-of-change",
+        "introduction/logic-model",
         "introduction/evidence-overview",
       ],
     },

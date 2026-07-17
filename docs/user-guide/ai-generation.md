@@ -16,7 +16,7 @@ When you click "Generate Logic Model," MUSE's AI:
 
 1. Reads your description and identifies the core intervention
 2. Constructs a full logic model with nodes at every stage (Activities through Impact)
-3. Searches the evidence database for peer-reviewed research relevant to each causal connection
+3. Searches the evidence database for research relevant to each causal connection
 4. Places everything on the canvas, complete with green evidence-backed arrows where research was found
 
 The whole process takes about **1 minute**.
@@ -104,7 +104,7 @@ Once generation is complete, the dialog closes and your logic model appears on t
 ![A generated logic model on the canvas after Auto Layout, with color-coded nodes flowing left to right and at least one green, evidence-backed arrow between stages.](/img/screenshots/en/canvas-with-evidence.png)
 
 :::info About Green Arrows
-Green arrows are special — they indicate that a peer-reviewed research study supports that causal link. You can click on a green arrow to see what evidence is attached.
+Green arrows are special — they indicate that a research study supports that causal link. You can click on a green arrow to see what evidence is attached.
 :::
 
 :::tip Re-tidying the layout later

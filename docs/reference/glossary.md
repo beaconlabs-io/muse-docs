@@ -38,7 +38,7 @@ A tidy-up pass that arranges canvas nodes into a left-to-right flow. Auto Layout
 
 **Japanese**: キャンバス
 
-MUSE's interactive workspace for building Logic Models. The canvas is powered by React Flow and allows users to create, connect, and annotate nodes representing the stages of a Theory of Change. Users can drag and drop nodes, draw edges between them, attach Evidence Cards, and generate Hypercerts directly from the canvas. The canvas view is split into a **Canvas** tab (for building) and a **Recipe** tab (for viewing generated Measurement Recipes).
+MUSE's interactive workspace for building Logic Models. The canvas is powered by React Flow and allows users to create, connect, and annotate nodes representing the stages of a Logic Model. Users can drag and drop nodes, draw edges between them, attach Evidence Cards, and generate Hypercerts directly from the canvas. The canvas view is split into a **Canvas** tab (for building) and a **Recipe** tab (for viewing generated Measurement Recipes).
 
 ---
 
@@ -158,7 +158,7 @@ InterPlanetary File System. A decentralized, peer-to-peer storage network used b
 
 **Japanese**: ロジックモデル
 
-A visual representation of a Theory of Change that maps the causal pathway from Activities to Impact. A Logic Model in MUSE consists of interconnected nodes — Activities, Outputs, Short-term Outcomes, Intermediate Outcomes, and Impact — connected by directed edges. Each causal link can be grounded in Evidence Cards to demonstrate that the assumed relationship is supported by research.
+A visual representation that maps the causal pathway from Activities to Impact. A Logic Model in MUSE consists of interconnected nodes — Activities, Outputs, Short-term Outcomes, Intermediate Outcomes, and Impact — connected by directed edges. Each causal link can be grounded in Evidence Cards to demonstrate that the assumed relationship is supported by research.
 
 ---
 
@@ -247,14 +247,6 @@ An AI-powered academic search engine developed by the Allen Institute for AI. MU
 **Japanese**: 短期アウトカム
 
 Immediate changes in knowledge, attitudes, skills, or behavior that result from Outputs. Short-term Outcomes are the first measurable effects that participants or target populations experience after an intervention is delivered. They are typically observed within weeks or months of the intervention and serve as leading indicators that the program is on track toward longer-term Intermediate Outcomes and Impact.
-
----
-
-### Theory of Change
-
-**Japanese**: セオリー・オブ・チェンジ
-
-A methodology for planning, implementing, and evaluating social interventions. A Theory of Change articulates the assumptions underlying a program by mapping out the complete causal pathway from Activities to Impact, identifying what needs to happen at each stage and why. In MUSE, a Logic Model is the visual expression of a Theory of Change, and Evidence Cards are used to validate each causal assumption with empirical research.
 
 ---
 
