@@ -1,12 +1,12 @@
 ---
 sidebar_position: 3
 title: Evidence in MUSE
-description: How peer-reviewed research evidence is structured, verified, and connected to your logic model
+description: How research evidence is structured, verified, and connected to your logic model
 ---
 
 # Evidence in MUSE
 
-Evidence is at the heart of MUSE. Every causal connection in your logic model can be supported by peer-reviewed research, making your Theory of Change more than just a diagram — it becomes a defensible, research-backed impact plan.
+Evidence is at the heart of MUSE. Every causal connection in your logic model can be supported by research evidence, making your logic model more than just a diagram — it becomes a defensible, research-backed impact plan.
 
 ## What is an Evidence Card?
 

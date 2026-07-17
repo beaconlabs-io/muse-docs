@@ -8,7 +8,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         "introduction/getting-started",
-        "introduction/theory-of-change",
+        "introduction/logic-model",
         "introduction/evidence-overview",
       ],
     },
@@ -19,6 +19,7 @@ const sidebars: SidebarsConfig = {
       items: [
         "user-guide/canvas-overview",
         "user-guide/ai-generation",
+        "user-guide/recipe",
         "user-guide/manual-editing",
         "user-guide/evidence-search",
         "user-guide/evidence-detail",
@@ -35,6 +36,12 @@ const sidebars: SidebarsConfig = {
         "reference/strength-of-evidence",
         "reference/glossary",
       ],
+    },
+    {
+      type: "category",
+      label: "Developers",
+      collapsed: true,
+      items: ["developers/index", "developers/agent-scorers"],
     },
   ],
 };

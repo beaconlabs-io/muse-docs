@@ -8,6 +8,10 @@ description: Detailed reference for the five effect categories used in MUSE to c
 
 MUSE classifies the results of each analysis into five intuitive categories so that users can quickly understand what an intervention actually produced. When browsing Evidence Cards or building a Logic Model, each piece of evidence is tagged with one of these categories, giving you an at-a-glance summary of whether an intervention worked, for whom, and whether it caused unintended consequences.
 
+:::tip Browse this in the app
+You can also explore these categories interactively at [muse.beaconlabs.io/effects](https://muse.beaconlabs.io/effects).
+:::
+
 ## Quick Reference
 
 | Icon color | Category | ID | Meaning |
@@ -73,7 +77,7 @@ Intervention effects show heterogeneity in many cases. Results are classified as
 Indicates that unintended effects other than the intervention's intended outcomes were observed. In many cases, these are statistically significant and represent practically undesirable effects of considerable magnitude.
 
 **When this applies**:
-- The intervention produced outcomes that were not part of the original theory of change.
+- The intervention produced outcomes that were not part of the original logic model.
 - These unintended outcomes are adverse — that is, they represent harm or deterioration in some dimension.
 - The unintended effects are large enough to be practically meaningful, not just statistically detectable noise.
 

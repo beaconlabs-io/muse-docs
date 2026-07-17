@@ -6,11 +6,24 @@ description: Overview of the interactive canvas — MUSE's main workspace for bu
 
 # Canvas Overview
 
-The Canvas is the heart of MUSE. It's your interactive workspace where you build, visualize, and refine your logic model (Theory of Change). Everything connects here — from AI-generated frameworks to manually crafted program pathways.
+The Canvas is the heart of MUSE. It's your interactive workspace where you build, visualize, and refine your logic model. Everything connects here — from AI-generated frameworks to manually crafted program pathways.
 
 :::tip Where to Find It
 Navigate to [muse.beaconlabs.io/canvas](https://muse.beaconlabs.io/canvas) or click **"Canvas"** in the top navigation bar.
 :::
+
+## Canvas and Recipe Tabs
+
+The canvas view is split into two tabs at the top:
+
+- **Canvas** — the interactive React Flow workspace where you build, edit, and connect nodes.
+- **Recipe** — the [Measurement Recipe](./recipe) view. Once you've generated a recipe, this tab shows practitioner-ready measurement guidance for every metric on your Output and Outcome cards.
+
+A small dot appears on the Recipe tab while a recipe is generating, and an amber warning icon appears when the recipe is *stale* (the logic model has changed since it was generated).
+
+The unified toolbar below the tabs shows actions relevant to whichever tab is active.
+
+![Canvas view with the Canvas / Recipe tabs at the top, showing a populated logic model. The Recipe tab shows an amber stale icon because the logic model has changed since the recipe was last generated.](/img/screenshots/en/canvas-recipe-tabs.png)
 
 ## The Toolbar
 
@@ -19,28 +32,41 @@ At the top of the canvas, you'll find the main toolbar with all the controls you
 | Button | What It Does |
 |--------|--------------|
 | **Generate Logic Model** | Opens the AI generation dialog — describe your program and let AI build the logic model for you |
-| **Add Logic** | Opens a side panel to manually add a new node to the canvas |
+| **Add Node** | Opens the centered Node Editor Dialog to manually add a new node to the canvas |
 | **More** | A dropdown menu with additional actions (see below) |
 
 ### The "More" Dropdown Menu
 
-Click **More** to access these additional actions:
+Click **More** to access additional actions, grouped by section:
 
-- **Mint Hypercert** — Create a blockchain-verified impact certificate from your logic model
+![More menu open, grouped into three sections: Canvas (Auto Layout, Mint Hypercert, Save to IPFS, Export Image, Export JSON), Recipe (Regenerate, Download HTML), and Danger (Clear All).](/img/screenshots/en/more-menu.png)
+
+**Canvas**
+
+- **Auto Layout** — Re-tidy the arrangement of nodes into a left-to-right layout (the same pass that runs automatically after AI generation)
+- **Mint Hypercert** *(temporarily disabled)* — Create a blockchain-verified impact certificate from your logic model. This action is currently unavailable while the minting flow is being reworked
 - **Save to IPFS** — Upload your logic model to decentralized storage and get a shareable link
-- **Export Image** — Download a PNG screenshot of your entire canvas
+- **Export Image** — Download a PNG screenshot of your entire canvas (a small "MUSE" credit is embedded in the corner so the export is traceable when shared externally)
 - **Export JSON** — Download the raw logic model data as a file
+
+**Recipe**
+
+- **Regenerate** — Re-run the [Measurement Recipe](./recipe) agent against the current metrics
+- **Download HTML** — Download the current Recipe as a self-contained HTML file (disabled until a recipe has been generated successfully)
+
+**Danger**
+
 - **Clear All** — Remove everything from the canvas and start fresh
 
 ## The Five Node Types
 
-Your logic model is built from five types of nodes, each representing a different stage in your program's causal chain. Each type has its own color so you can recognize it at a glance:
+Your logic model is built from five types of nodes, each representing a different stage in your program's causal chain. Most types have their own color. Short-term and Intermediate Outcomes share the same yellow, so tell those two apart by the type label shown on each card:
 
 | Node Type | Color | What It Represents | Example |
 |-----------|-------|--------------------|---------|
-| **Activities** | Orange | The concrete actions your program carries out | Running training workshops |
+| **Activities** | Blue | The concrete actions your program carries out | Running training workshops |
 | **Outputs** | Green | The direct, measurable results of your activities | 200 participants trained |
-| **Short-term Outcomes** | Blue | Early changes in knowledge, skills, or behavior | Increased digital literacy |
+| **Short-term Outcomes** | Yellow | Early changes in knowledge, skills, or behavior | Increased digital literacy |
 | **Intermediate Outcomes** | Yellow | Medium-term changes that build toward your goal | Higher employment rates |
 | **Impact** | Purple | The long-term societal change you are working toward | Reduced economic inequality |
 
@@ -55,7 +81,9 @@ Arrows on the canvas represent **causal connections** between nodes — the clai
 - **Regular arrows (gray/white)** — A causal connection you've asserted in your model
 - **Green arrows** — A causal connection that is backed by linked research evidence
 
-When you see a green arrow, it means peer-reviewed research supports that specific step in your causal chain. Click on a green arrow to open a dialog showing the linked evidence. If external paper search was enabled during generation, you may also see academic papers from Semantic Scholar displayed as reference material alongside the curated evidence.
+When you see a green arrow, it means research evidence supports that specific step in your causal chain. Click on a green arrow to open a dialog showing the linked evidence. If external paper search was enabled during generation, you may also see academic papers from Semantic Scholar displayed as reference material alongside the curated evidence.
+
+![The evidence dialog opened from a green arrow, listing the linked research evidence that backs the causal connection between two nodes.](/img/screenshots/en/evidence-dialog.png)
 
 This is one of MUSE's most powerful features: turning assumptions into evidence-backed claims.
 
@@ -78,7 +106,7 @@ Once nodes are on the canvas, you can interact with them in several ways:
 | Action | How To Do It |
 |--------|--------------|
 | **Select a node** | Click on it once — it will highlight with a selection border |
-| **Edit a node** | Double-click on it, or hover and click the pencil icon that appears |
+| **Edit a node** | Double-click on it, or hover and click the pencil icon that appears — both open the centered Node Editor Dialog |
 | **Move a node** | Click and drag it to a new position |
 | **Delete a node** | Select it and press the **Delete** or **Backspace** key |
 | **Connect two nodes** | Drag from the small dot (handle) on the right edge of one node to the handle on the left edge of another |
@@ -108,5 +136,6 @@ MUSE currently stores one canvas per browser. If you want to preserve your work 
 ## Next Steps
 
 - [Generate a logic model with AI →](./ai-generation)
+- [Turn your metrics into a Measurement Recipe →](./recipe)
 - [Add and edit nodes manually →](./manual-editing)
 - [Save and share your canvas →](./saving-sharing)

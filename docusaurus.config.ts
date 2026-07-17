@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Muse Documentation",
-  tagline: "Evidence-Based Impact Planning with Theory of Change",
+  tagline: "Evidence-Based Impact Planning with Logic Models",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

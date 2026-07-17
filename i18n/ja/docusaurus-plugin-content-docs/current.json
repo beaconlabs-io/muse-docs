@@ -14,5 +14,9 @@
   "sidebar.mainSidebar.category.Reference": {
     "message": "リファレンス",
     "description": "The label for category 'Reference' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Developers": {
+    "message": "開発者向け",
+    "description": "The label for category 'Developers' in sidebar 'mainSidebar'"
   }
 }

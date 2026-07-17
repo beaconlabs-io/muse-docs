@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: Reading Evidence
 description: How to read and understand an evidence detail page in MUSE
 ---
@@ -16,6 +16,8 @@ Understanding how to read an evidence page will help you evaluate how well a stu
 - **Direct URL**: Evidence pages follow the pattern `muse.beaconlabs.io/evidence/[slug]`, where `[slug]` is the unique identifier for that study
 
 ## The Page Header
+
+![An evidence detail page showing the title, author, publication date, version, and a star strength rating, with the research summary and results below.](/img/screenshots/en/evidence-detail.png)
 
 At the top of every evidence page you'll find:
 
