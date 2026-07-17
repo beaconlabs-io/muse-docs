@@ -37,6 +37,8 @@ IPFS (InterPlanetary File System) is a decentralized storage network. Saving you
    - **Canvas preview** — A thumbnail of your logic model
 5. Copy the URL to your clipboard with the copy button, or share it directly on **X (Twitter)** using the share button
 
+![The Save to IPFS dialog after a successful upload, showing the IPFS hash, a shareable URL, a canvas preview thumbnail, and Copy and X share buttons.](/img/screenshots/en/ipfs-save-dialog.png)
+
 ### Sharing the URL
 
 Anyone with the shareable URL can view your logic model in read-only mode. They'll see the full canvas with all your nodes, connections, and evidence links — but they won't be able to edit it (the canvas is view-only when accessed via a shared link).

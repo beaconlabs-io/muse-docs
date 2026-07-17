@@ -41,9 +41,9 @@ At the bottom of the dialog, a pinned footer holds **Cancel** and **Add card** (
 
 | Type | Color | When to use |
 |------|-------|-------------|
-| Activities | Orange | Actions or interventions your program carries out |
+| Activities | Blue | Actions or interventions your program carries out |
 | Outputs | Green | Direct, countable products of your activities |
-| Short-term Outcomes | Blue | Immediate changes in knowledge, behavior, or skills |
+| Short-term Outcomes | Yellow | Immediate changes in knowledge, behavior, or skills |
 | Intermediate Outcomes | Yellow | Medium-term changes building toward your goal |
 | Impact | Purple | The long-term societal change you are aiming for |
 

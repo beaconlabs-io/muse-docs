@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: Searching Evidence
 description: How to search and filter the research evidence database in MUSE
 ---
@@ -7,6 +7,8 @@ description: How to search and filter the research evidence database in MUSE
 # Searching Evidence
 
 MUSE includes a curated database of peer-reviewed research evidence. The Evidence Search page lets you browse, filter, and read the studies that underpin logic model connections. Whether you're looking for evidence to support a specific causal claim or simply exploring what the research says about your topic area, this is your starting point.
+
+![The Evidence Search page: a keyword search bar with Effect and Strength filters, a result count, and a grid of evidence cards below.](/img/screenshots/en/evidence-search.png)
 
 ## Getting to Evidence Search
 

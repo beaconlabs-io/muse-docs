@@ -8,6 +8,10 @@ description: Detailed reference for the five effect categories used in MUSE to c
 
 MUSE classifies the results of each analysis into five intuitive categories so that users can quickly understand what an intervention actually produced. When browsing Evidence Cards or building a Logic Model, each piece of evidence is tagged with one of these categories, giving you an at-a-glance summary of whether an intervention worked, for whom, and whether it caused unintended consequences.
 
+:::tip Browse this in the app
+You can also explore these categories interactively at [muse.beaconlabs.io/effects](https://muse.beaconlabs.io/effects).
+:::
+
 ## Quick Reference
 
 | Icon color | Category | ID | Meaning |

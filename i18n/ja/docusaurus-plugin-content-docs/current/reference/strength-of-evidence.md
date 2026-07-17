@@ -10,6 +10,10 @@ MUSEは研究で示された分析結果のエビデンスの強度を、**Maryl
 
 以下の説明は [What Works Centre for Local Growth](https://whatworksgrowth.org/resources/the-scientific-maryland-scale/) に基づいています。
 
+:::tip アプリ内でも閲覧できます
+エビデンスの強度スケールは [muse.beaconlabs.io/strength-of-evidence](https://muse.beaconlabs.io/strength-of-evidence) でも対話的に確認できます。
+:::
+
 ---
 
 ## エビデンスの強度が重要な理由

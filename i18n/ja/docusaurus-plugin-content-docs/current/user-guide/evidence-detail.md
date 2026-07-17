@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: エビデンスの読み方
 description: MUSEのエビデンス詳細ページの読み方と理解の仕方
 ---
@@ -16,6 +16,8 @@ description: MUSEのエビデンス詳細ページの読み方と理解の仕方
 - **直接URL**：エビデンスページのURLは `muse.beaconlabs.io/evidence/[slug]` の形式です。`[slug]` はその研究の固有識別子です
 
 ## ページヘッダー
+
+![エビデンス詳細ページ。タイトル、著者、公開日、バージョン、星による強度評価が表示され、その下に研究の要約と結果が続いている。](/img/screenshots/ja/evidence-detail.png)
 
 各エビデンスページの上部には以下の情報が表示されます。
 

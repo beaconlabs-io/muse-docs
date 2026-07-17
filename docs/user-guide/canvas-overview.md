@@ -44,7 +44,7 @@ Click **More** to access additional actions, grouped by section:
 **Canvas**
 
 - **Auto Layout** — Re-tidy the arrangement of nodes into a left-to-right layout (the same pass that runs automatically after AI generation)
-- **Mint Hypercert** — Create a blockchain-verified impact certificate from your logic model
+- **Mint Hypercert** *(temporarily disabled)* — Create a blockchain-verified impact certificate from your logic model. This action is currently unavailable while the minting flow is being reworked
 - **Save to IPFS** — Upload your logic model to decentralized storage and get a shareable link
 - **Export Image** — Download a PNG screenshot of your entire canvas (a small "MUSE" credit is embedded in the corner so the export is traceable when shared externally)
 - **Export JSON** — Download the raw logic model data as a file
@@ -54,19 +54,19 @@ Click **More** to access additional actions, grouped by section:
 - **Regenerate** — Re-run the [Measurement Recipe](./recipe) agent against the current metrics
 - **Download HTML** — Download the current Recipe as a self-contained HTML file (disabled until a recipe has been generated successfully)
 
-**Danger Zone**
+**Danger**
 
 - **Clear All** — Remove everything from the canvas and start fresh
 
 ## The Five Node Types
 
-Your logic model is built from five types of nodes, each representing a different stage in your program's causal chain. Each type has its own color so you can recognize it at a glance:
+Your logic model is built from five types of nodes, each representing a different stage in your program's causal chain. Most types have their own color. Short-term and Intermediate Outcomes share the same yellow, so tell those two apart by the type label shown on each card:
 
 | Node Type | Color | What It Represents | Example |
 |-----------|-------|--------------------|---------|
-| **Activities** | Orange | The concrete actions your program carries out | Running training workshops |
+| **Activities** | Blue | The concrete actions your program carries out | Running training workshops |
 | **Outputs** | Green | The direct, measurable results of your activities | 200 participants trained |
-| **Short-term Outcomes** | Blue | Early changes in knowledge, skills, or behavior | Increased digital literacy |
+| **Short-term Outcomes** | Yellow | Early changes in knowledge, skills, or behavior | Increased digital literacy |
 | **Intermediate Outcomes** | Yellow | Medium-term changes that build toward your goal | Higher employment rates |
 | **Impact** | Purple | The long-term societal change you are working toward | Reduced economic inequality |
 
@@ -82,6 +82,8 @@ Arrows on the canvas represent **causal connections** between nodes — the clai
 - **Green arrows** — A causal connection that is backed by linked research evidence
 
 When you see a green arrow, it means peer-reviewed research supports that specific step in your causal chain. Click on a green arrow to open a dialog showing the linked evidence. If external paper search was enabled during generation, you may also see academic papers from Semantic Scholar displayed as reference material alongside the curated evidence.
+
+![The evidence dialog opened from a green arrow, listing the linked research evidence that backs the causal connection between two nodes.](/img/screenshots/en/evidence-dialog.png)
 
 This is one of MUSE's most powerful features: turning assumptions into evidence-backed claims.
 

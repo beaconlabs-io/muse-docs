@@ -16,9 +16,9 @@ A logic model is the visual representation of a Theory of Change. In MUSE, logic
 
 | Stage | Color | Description | Example |
 |-------|-------|-------------|---------|
-| **Activities** | Orange | Concrete actions your program takes | Conducting workshops, distributing materials |
+| **Activities** | Blue | Concrete actions your program takes | Conducting workshops, distributing materials |
 | **Outputs** | Green | Direct products or deliverables of activities | Number of workshops held, materials distributed |
-| **Short-term Outcomes** | Blue | Immediate changes in knowledge, attitudes, or behavior | Increased awareness, skill development |
+| **Short-term Outcomes** | Yellow | Immediate changes in knowledge, attitudes, or behavior | Increased awareness, skill development |
 | **Intermediate Outcomes** | Yellow | Medium-term changes that result from short-term outcomes | Policy changes, community adoption |
 | **Impact** | Purple | Long-term societal change — the ultimate goal | Reduced poverty, improved public health |
 
@@ -46,7 +46,7 @@ MUSE brings Theory of Change into the digital age:
 2. **AI Generation** — Describe your intervention and let AI generate a complete logic model
 3. **Evidence Linking** — AI automatically searches and links relevant research to each causal connection
 4. **Metrics** — Attach measurable indicators to any stage of your model
-5. **Blockchain Verification** — Mint your logic model as a Hypercert for transparent, verifiable impact claims
+5. **Blockchain Verification** — Mint your logic model as a Hypercert for transparent, verifiable impact claims *(minting is temporarily disabled while the flow is being reworked)*
 6. **Sharing** — Save to IPFS and share your logic model with anyone via a permanent link
 
 ## Example: Education Program

@@ -140,7 +140,7 @@ Long-term societal change; the ultimate goal of an intervention. Impact sits at 
 
 ### Intermediate Outcome
 
-**Japanese**: 中間アウトカム
+**Japanese**: 中期アウトカム
 
 Medium-term changes resulting from short-term outcomes. In a Logic Model, Intermediate Outcomes represent the behavioral, social, or systemic shifts that occur after the immediate effects of an intervention take hold — for example, increased economic self-sufficiency following improved financial literacy. Intermediate Outcomes bridge Short-term Outcomes and long-term Impact.
 

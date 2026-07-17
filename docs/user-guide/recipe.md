@@ -35,7 +35,7 @@ There are two ways to trigger Recipe generation:
 
 ### Option 1 — Enable Recipe at generation time
 
-When you use [AI generation](./ai-generation), the Generate Logic Model dialog includes an **"Also generate measurement recipe"** toggle. Turn it on before clicking Generate, and MUSE will produce the logic model and the recipe in a single streaming run.
+When you use [AI generation](./ai-generation), the Generate Logic Model dialog includes an **"Also generate recipe"** toggle. Turn it on before clicking Generate, and MUSE will produce the logic model and the recipe in a single streaming run.
 
 This is the recommended path when you're starting from scratch — the AI writes metrics and the recipe consistently, in the same session.
 

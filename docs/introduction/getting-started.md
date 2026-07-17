@@ -42,10 +42,14 @@ Practice and experiment without real blockchain costs:
 
 - **URL**: [https://dev.muse.beaconlabs.io](https://dev.muse.beaconlabs.io)
 - **Network**: Base Sepolia (test network)
-- **Use for**: Learning, testing features, practice minting Hypercerts
+- **Use for**: Learning, testing features, browsing Hypercerts *(minting from the canvas is temporarily disabled)*
 
 :::info Language Support
 MUSE is available in **English** and **Japanese**. Use the globe icon in the navigation bar to switch languages at any time.
+:::
+
+:::info No Wallet Needed to Get Started
+Building logic models, generating them with AI, and browsing evidence all work without connecting a wallet. A wallet is only required to mint a Hypercert — and canvas minting is temporarily disabled while that flow is being reworked, so you can explore everything else freely.
 :::
 
 ## Quick Start: Your First 5 Minutes
@@ -55,11 +59,13 @@ MUSE is available in **English** and **Japanese**. Use the globe icon in the nav
 3. **Generate with AI** — Click the "Generate Logic Model" button and describe your intervention
    - Example: *"OSS impact on Ethereum ecosystem"*
    - Example: *"Reducing food insecurity in urban communities"*
-4. **Review Your Logic Model** — In about 40 seconds, you'll see:
+4. **Review Your Logic Model** — In about a minute, you'll see:
    - Color-coded cards representing each stage (Activities → Outputs → Outcomes → Impact)
    - Arrows showing causal relationships between stages
    - Green edges indicating evidence-backed connections
 5. **Explore Evidence** — Click on green edges to see the peer-reviewed research supporting each connection
+
+![A generated logic model on the canvas, with color-coded nodes flowing left to right and a green, evidence-backed arrow linking two stages.](/img/screenshots/en/canvas-with-evidence.png)
 
 That's it! You've created an evidence-based Theory of Change.
 
