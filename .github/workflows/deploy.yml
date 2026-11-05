@@ -1,0 +1,73 @@
+name: Deploy
+
+# Deploys on push to main, which is what merging a PR does. The manual dispatch
+# redeploys main. Same shape as muse's deploy-worker.yml, minus the staging
+# environment this site does not have.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      deployments: write
+    # The Cloudflare token is an environment secret, so a workflow edited on
+    # some other branch cannot read it; restrict the environment's deployment
+    # branches to main.
+    environment:
+      name: production
+      url: https://docs.musecanvas.app
+    env:
+      # `secrets` cannot be read from an `if:`, so it is mapped to a flag here.
+      HAS_CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+    steps:
+      - name: Refuse to run without a Cloudflare token
+        if: env.HAS_CLOUDFLARE_TOKEN != 'true'
+        run: |
+          echo "::error::CLOUDFLARE_API_TOKEN is not configured on the 'production' environment, so nothing can deploy. Add it, then re-run this workflow."
+          exit 1
+
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.5
+
+      - run: bun install --frozen-lockfile
+
+      - run: bun run typecheck
+
+      # Fails on broken links and missing images (onBrokenLinks: "throw").
+      - run: bun run build
+
+      - name: Deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: bunx wrangler deploy
+
+      - name: Smoke test
+        run: |
+          # A fresh deploy can take a few seconds to propagate, so retry.
+          for path in / /docs/introduction/getting-started/ /ja/; do
+            echo "GET https://docs.musecanvas.app${path}"
+            curl --fail --silent --show-error --location \
+              --retry 10 --retry-delay 6 --retry-all-errors \
+              --output page.html "https://docs.musecanvas.app${path}"
+            grep -q "<html" page.html
+          done
+
+      - name: Rollback instructions
+        if: failure()
+        run: |
+          echo "::error::Deploy failed. If a bad version went live, roll back with: bunx wrangler rollback"

@@ -5,7 +5,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 MUSE documentation site built with **Docusaurus 3.9.2** (React 19, TypeScript, Tailwind).
-Deployed at **https://docs.muse.beaconlabs.io**.
+Deployed at **https://docs.musecanvas.app** as an assets-only Cloudflare Worker
+(`muse-docs`, `wrangler.jsonc`). A push to `main` deploys via
+`.github/workflows/deploy.yml`; `bun run deploy` is the break-glass manual path and
+`bunx wrangler rollback` restores the previous version.
 
 ## Development Commands
 

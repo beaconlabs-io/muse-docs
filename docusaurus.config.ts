@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://docs.muse.beaconlabs.io",
+  url: "https://docs.musecanvas.app",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -48,7 +48,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/beaconlabs-io/docs-muse/tree/main/",
+          editUrl: "https://github.com/beaconlabs-io/muse-docs/tree/main/",
         },
         blog: false,
         theme: {
@@ -95,7 +95,7 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://muse.beaconlabs.io",
+          href: "https://musecanvas.app",
           label: "Launch App",
           position: "right",
         },
@@ -127,11 +127,11 @@ const config: Config = {
           items: [
             {
               label: "Muse App",
-              href: "https://muse.beaconlabs.io",
+              href: "https://musecanvas.app",
             },
             {
               label: "Dev App",
-              href: "https://dev.muse.beaconlabs.io",
+              href: "https://dev.musecanvas.app",
             },
           ],
         },

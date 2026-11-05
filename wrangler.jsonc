@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Assets-only Worker: no `main`, Cloudflare serves the Docusaurus build as-is.
+  "name": "muse-docs",
+  // beaconlabs-admin account — pinned so deploys never target a personal account.
+  "account_id": "4c5ef16e3b6b9dd23e9a8f59bc69bea7",
+  "compatibility_date": "2026-11-05",
+  "assets": {
+    "directory": "./build",
+    // Docusaurus emits build/404.html; the default ("none") would answer
+    // unknown paths with an empty 404 instead.
+    "not_found_handling": "404-page",
+  },
+  // `custom_domain` means Cloudflare owns this hostname's DNS record: it is
+  // created on the first deploy, and adding a record for it by hand makes the
+  // attach fail (error 100117). Declaring a route turns workers.dev off, so
+  // this is the site's only public hostname.
+  "routes": [{ "pattern": "docs.musecanvas.app", "custom_domain": true }],
+}
