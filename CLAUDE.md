@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-MUSE documentation site built with **Docusaurus 3.9.2** (React 19, TypeScript, Tailwind).
+MUSE documentation site built with **Docusaurus 3.10.2** (React 19, TypeScript, Tailwind).
 Deployed at **https://docs.musecanvas.app** as an assets-only Cloudflare Worker
 (`muse-docs`, `wrangler.jsonc`). A push to `main` deploys via
 `.github/workflows/deploy.yml`; `bun run deploy` is the break-glass manual path and
@@ -39,7 +39,7 @@ bun run write-translations     # Extract translatable strings into i18n/
 
 ## Gotchas
 
-- **Missing local images fail the build.** Docusaurus 3.9.x *throws* (not warns) when a Markdown
+- **Missing local images fail the build.** Docusaurus *throws* (not warns) when a Markdown
   image references a nonexistent local file. `bun start` may tolerate it, but `bun run build`
   hard-fails — verify every `![...](./path)` / `<img src>` resolves before building.
 - **Tailwind is wired via an inline plugin** in `docusaurus.config.ts` (a small `tailwindPlugin`

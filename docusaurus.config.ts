@@ -27,6 +27,12 @@ const config: Config = {
 
   onBrokenLinks: "throw",
 
+  // `future.v4` turns the MDX v1 compat layer off by default from 3.10 on.
+  // The docs rely on it: `:::info Title` admonitions and `## Heading {#id}`.
+  markdown: {
+    mdx1Compat: { comments: true, admonitions: true, headingIds: true },
+  },
+
   i18n: {
     defaultLocale: "en",
     locales: ["en", "ja"],
