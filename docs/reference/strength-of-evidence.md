@@ -11,7 +11,7 @@ MUSE evaluates the strength of evidence for analytical results presented in stud
 The explanations below are based on the [What Works Centre for Local Growth](https://whatworksgrowth.org/resources/the-scientific-maryland-scale/).
 
 :::tip Browse this in the app
-You can also explore the strength-of-evidence scale interactively at [muse.beaconlabs.io/strength-of-evidence](https://muse.beaconlabs.io/strength-of-evidence).
+You can also explore the strength-of-evidence scale interactively at [musecanvas.app/strength-of-evidence](https://musecanvas.app/strength-of-evidence).
 :::
 
 ---

@@ -38,7 +38,7 @@ A tidy-up pass that arranges canvas nodes into a left-to-right flow. Auto Layout
 
 **Japanese**: キャンバス
 
-MUSE's interactive workspace for building Logic Models. The canvas is powered by React Flow and allows users to create, connect, and annotate nodes representing the stages of a Logic Model. Users can drag and drop nodes, draw edges between them, attach Evidence Cards, and generate Hypercerts directly from the canvas. The canvas view is split into a **Canvas** tab (for building) and a **Recipe** tab (for viewing generated Measurement Recipes).
+MUSE's interactive workspace for building Logic Models. The canvas is powered by React Flow and allows users to create, connect, and annotate nodes representing the stages of a Logic Model. Users can drag and drop nodes, draw edges between them, and attach Evidence Cards. The canvas view is split into a **Canvas** tab (for building) and a **Recipe** tab (for viewing generated Measurement Recipes).
 
 ---
 
@@ -114,22 +114,6 @@ The plain-language description of what you want to achieve, which you provide to
 
 ---
 
-### Gas Fee
-
-**Japanese**: ガス代
-
-The transaction cost paid to the blockchain network when performing an on-chain operation, such as creating an attestation or minting a Hypercert. Gas fees are denominated in the network's native token (ETH on Base Sepolia) and fluctuate based on network congestion. Users must have a connected wallet with sufficient funds to pay gas fees when performing blockchain operations in MUSE.
-
----
-
-### Hypercert
-
-**Japanese**: ハイパーサート
-
-An on-chain impact certificate that represents a verified claim of social impact. In MUSE, Logic Models can be used to generate Hypercerts that document the evidence base underlying a program's impact claims. Hypercerts are minted on the blockchain and provide a publicly verifiable, persistent record of impact for funders, evaluators, and beneficiaries. In the Japanese interface, Hypercerts are displayed as "インパクト証明書" (Impact Certificate).
-
----
-
 ### Impact
 
 **Japanese**: インパクト
@@ -150,7 +134,7 @@ Medium-term changes resulting from short-term outcomes. In a Logic Model, Interm
 
 **Japanese**: IPFS（惑星間ファイルシステム）
 
-InterPlanetary File System. A decentralized, peer-to-peer storage network used by MUSE to store evidence files and Logic Models. When evidence is attested, its MDX file is uploaded to IPFS via Pinata and the resulting content identifier (CID) is included in the on-chain attestation record. This ensures that evidence content is permanently accessible and cannot be altered after attestation.
+InterPlanetary File System. A decentralized, peer-to-peer storage network used by MUSE to store evidence files. When evidence is attested, its MDX file is uploaded to IPFS via Pinata and the resulting content identifier (CID) is included in the on-chain attestation record. This ensures that evidence content is permanently accessible and cannot be altered after attestation.
 
 ---
 
@@ -218,19 +202,19 @@ The direct products or deliverables that result from carrying out Activities. Ou
 
 ---
 
+### Private Mode
+
+**Japanese**: 非公開モード
+
+A workspace setting that keeps its logic models inside the workspace. While it is on, external paper search is not run during AI generation and link sharing is unavailable; turning it on revokes every existing share link in the workspace. See [Accounts & Workspaces](../user-guide/accounts-workspaces.md#private-mode).
+
+---
+
 ### RCT
 
 **Japanese**: RCT（ランダム化比較試験）
 
 Randomized Controlled Trial. The gold standard of experimental research, corresponding to Level 5 on the Maryland SMS. In an RCT, participants are randomly assigned to either an intervention group or a control group. Random assignment ensures that — on average — the two groups are equivalent at baseline, allowing researchers to attribute any subsequent difference in outcomes to the intervention itself. RCT evidence provides the highest degree of causal confidence available.
-
----
-
-### Scorer
-
-**Japanese**: スコアラー
-
-An evaluation component from the Mastra Evals framework that automatically grades an agent's output on a specific dimension — for example, whether the agent called the expected tool (*toolCallAccuracy*), whether the output aligned with the system prompt (*promptAlignment*), or whether the answer was relevant (*answerRelevancy*). MUSE wires scorers to key agents so that quality can be inspected in Mastra Studio traces. See the [Agent Scorers](../developers/agent-scorers.md) developer note for detail.
 
 ---
 
@@ -242,6 +226,14 @@ An AI-powered academic search engine developed by the Allen Institute for AI. MU
 
 ---
 
+### Share Link
+
+**Japanese**: 共有リンク
+
+A link that opens a read-only view of a saved logic model without signing in. The owner turns it on with **Anyone with the link** in the Share dialog and can turn it off again at any time. See [Saving & Sharing](../user-guide/saving-sharing.md#sharing-by-link).
+
+---
+
 ### Short-term Outcome
 
 **Japanese**: 短期アウトカム
@@ -250,8 +242,16 @@ Immediate changes in knowledge, attitudes, skills, or behavior that result from 
 
 ---
 
-### Wallet
+### Version
 
-**Japanese**: ウォレット
+**Japanese**: バージョン
 
-A cryptocurrency wallet used to sign and submit blockchain transactions in MUSE. Users connect their wallet (via RainbowKit) to perform on-chain operations such as creating EAS attestations or minting Hypercerts. The wallet holds the private key needed to authorize transactions and pay Gas Fees. MUSE supports standard Ethereum-compatible wallets (e.g., MetaMask).
+A snapshot of a logic model created each time you click **Save**. All versions are kept in the model's history, and restoring one copies it as the newest version. See [Saving & Sharing](../user-guide/saving-sharing.md#version-history).
+
+---
+
+### Workspace
+
+**Japanese**: ワークスペース
+
+The place where saved logic models are stored. Every account has a personal workspace, and shared workspaces can be created to collaborate with invited members, each with the role Owner, Admin, or Member. See [Accounts & Workspaces](../user-guide/accounts-workspaces.md).

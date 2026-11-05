@@ -9,7 +9,11 @@ description: Overview of the interactive canvas — MUSE's main workspace for bu
 The Canvas is the heart of MUSE. It's your interactive workspace where you build, visualize, and refine your logic model. Everything connects here — from AI-generated frameworks to manually crafted program pathways.
 
 :::tip Where to Find It
-Navigate to [muse.beaconlabs.io/canvas](https://muse.beaconlabs.io/canvas) or click **"Canvas"** in the top navigation bar.
+Navigate to [musecanvas.app/canvas](https://musecanvas.app/canvas) or click **"Canvas"** in the sidebar.
+:::
+
+:::info First Visit
+The first time you open an editable canvas, a short guided tour walks you through the main controls. You can replay it at any time with the **help (?)** icon in the canvas header.
 :::
 
 ## Canvas and Recipe Tabs
@@ -21,7 +25,9 @@ The canvas view is split into two tabs at the top:
 
 A small dot appears on the Recipe tab while a recipe is generating, and an amber warning icon appears when the recipe is *stale* (the logic model has changed since it was generated).
 
-The unified toolbar below the tabs shows actions relevant to whichever tab is active.
+Next to the tabs is the logic model's title. Click it to rename a saved logic model.
+
+The toolbar on the right of the header shows actions relevant to whichever tab is active.
 
 ![Canvas view with the Canvas / Recipe tabs at the top, showing a populated logic model. The Recipe tab shows an amber stale icon because the logic model has changed since the recipe was last generated.](/img/screenshots/en/canvas-recipe-tabs.png)
 
@@ -31,22 +37,24 @@ At the top of the canvas, you'll find the main toolbar with all the controls you
 
 | Button | What It Does |
 |--------|--------------|
-| **Generate Logic Model** | Opens the AI generation dialog — describe your program and let AI build the logic model for you |
+| **Generate Logic Model** | Opens the AI generation dialog — describe your program and let AI build the logic model for you (requires signing in) |
 | **Add Node** | Opens the centered Node Editor Dialog to manually add a new node to the canvas |
+| **Save** | Saves the logic model to your active workspace as a new version. Signed out, it opens the sign-in dialog instead |
+| **History** (clock icon) | Opens the version history of a saved logic model |
+| **Share** (share icon) | Opens the sharing settings. Shown only to the owner of a saved logic model |
+| **Start tour** (help icon) | Replays the guided tour |
 | **More** | A dropdown menu with additional actions (see below) |
+
+On the **Recipe** tab, the first two buttons are replaced by the recipe actions (**Generate recipe**, **Regenerate**, **Download HTML**). Saving, history, and sharing are covered in [Saving & Sharing](./saving-sharing).
 
 ### The "More" Dropdown Menu
 
 Click **More** to access additional actions, grouped by section:
 
-![More menu open, grouped into three sections: Canvas (Auto Layout, Mint Hypercert, Save to IPFS, Export Image, Export JSON), Recipe (Regenerate, Download HTML), and Danger (Clear All).](/img/screenshots/en/more-menu.png)
-
 **Canvas**
 
 - **Auto Layout** — Re-tidy the arrangement of nodes into a left-to-right layout (the same pass that runs automatically after AI generation)
-- **Mint Hypercert** *(temporarily disabled)* — Create a blockchain-verified impact certificate from your logic model. This action is currently unavailable while the minting flow is being reworked
-- **Save to IPFS** — Upload your logic model to decentralized storage and get a shareable link
-- **Export Image** — Download a PNG screenshot of your entire canvas (a small "MUSE" credit is embedded in the corner so the export is traceable when shared externally)
+- **Export Image** — Copy or download a PNG of your entire canvas, framed with a "MUSE" credit so the export is traceable when shared externally
 - **Export JSON** — Download the raw logic model data as a file
 
 **Recipe**
@@ -57,6 +65,8 @@ Click **More** to access additional actions, grouped by section:
 **Danger**
 
 - **Clear All** — Remove everything from the canvas and start fresh
+
+When you open a logic model you can only view, **Auto Layout** and **Clear All** are hidden, along with the Generate, Add Node, and Save buttons.
 
 ## The Five Node Types
 
@@ -125,13 +135,11 @@ In the bottom corner of the canvas, you'll see a small minimap showing the full 
 
 This is especially useful when your logic model grows large and you need to navigate between different sections quickly.
 
-## Auto-Save
+## Drafts and Saving
 
-Your canvas is automatically saved to your browser's local storage as you work. You don't need to manually save your progress — just come back to the same browser on the same device and your work will be right where you left it.
+While you work, MUSE keeps an unsaved **draft** of the canvas in your browser, so a reload or a closed tab doesn't lose your edits. A draft lives only in that browser and is removed when you sign out.
 
-:::warning One Canvas at a Time
-MUSE currently stores one canvas per browser. If you want to preserve your work before starting a new logic model, use **Save to IPFS** to create a permanent, shareable link first.
-:::
+To keep a logic model, click **Save**. Saved logic models are stored in your workspace, appear under **Logic models** in the sidebar, and can be opened from any device you sign in on. See [Saving & Sharing](./saving-sharing) for details.
 
 ## Next Steps
 

@@ -12,7 +12,7 @@ MUSE includes a curated database of research evidence. The Evidence Search page 
 
 ## Getting to Evidence Search
 
-Click **"Evidence"** in the top navigation bar to open the Evidence Search page at [muse.beaconlabs.io/search](https://muse.beaconlabs.io/search).
+Click **"Evidence"** in the sidebar to open the Evidence Search page at [musecanvas.app/search](https://musecanvas.app/search).
 
 You'll see a search bar at the top and a grid of evidence cards below, showing all available research.
 

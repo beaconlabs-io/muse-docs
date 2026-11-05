@@ -13,7 +13,7 @@ description: MUSEのエビデンス詳細ページの読み方と理解の仕方
 ## エビデンスページへのアクセス方法
 
 - **検索から**：[エビデンス検索ページ](/docs/user-guide/evidence-search)で任意のエビデンスカードをクリックします
-- **直接URL**：エビデンスページのURLは `muse.beaconlabs.io/evidence/[slug]` の形式です。`[slug]` はその研究の固有識別子です
+- **直接URL**：エビデンスページのURLは `musecanvas.app/evidence/[slug]` の形式です。`[slug]` はその研究の固有識別子です
 
 ## ページヘッダー
 

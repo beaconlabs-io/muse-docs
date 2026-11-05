@@ -24,6 +24,7 @@ const sidebars: SidebarsConfig = {
         "user-guide/evidence-search",
         "user-guide/evidence-detail",
         "user-guide/saving-sharing",
+        "user-guide/accounts-workspaces",
         "user-guide/best-practices",
       ],
     },
@@ -41,7 +42,7 @@ const sidebars: SidebarsConfig = {
       type: "category",
       label: "Developers",
       collapsed: true,
-      items: ["developers/index", "developers/agent-scorers"],
+      items: ["developers/index"],
     },
   ],
 };

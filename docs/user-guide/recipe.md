@@ -27,6 +27,8 @@ Before you can generate a Recipe, your canvas must have:
   *(Recipes are not generated for Activities or Impact cards — those sit outside the operational measurement layer.)*
 - At least one metric attached to one of those cards (metric name required, description optional).
 
+Generating a Recipe also requires signing in; starting one while signed out opens the sign-in dialog.
+
 If either prerequisite is missing, the Recipe tab will show a "no metrics" or "no target cards" message with instructions on what to add.
 
 ## How to Generate a Recipe

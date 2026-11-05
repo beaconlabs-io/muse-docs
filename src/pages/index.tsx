@@ -30,8 +30,8 @@ function HeroSection() {
           <p className={styles.heroDescription}>
             <Translate id="homepage.description">
               Build logic models grounded in research evidence. MUSE connects
-              your program design to curated evidence — powered by AI and
-              verified on the blockchain.
+              your program design to curated, independently verifiable
+              evidence — powered by AI.
             </Translate>
           </p>
 
@@ -45,7 +45,7 @@ function HeroSection() {
             </Link>
             <Link
               className={styles.btnSecondary}
-              href="https://muse.beaconlabs.io"
+              href="https://musecanvas.app"
             >
               <Translate id="homepage.launchApp">Launch App</Translate>
             </Link>
@@ -113,11 +113,11 @@ const features: FeatureItem[] = [
     ),
   },
   {
-    titleId: "homepage.feature.blockchain.title",
-    titleDefault: "Verified on the Blockchain",
-    descId: "homepage.feature.blockchain.description",
+    titleId: "homepage.feature.workspace.title",
+    titleDefault: "Save, Version, and Share",
+    descId: "homepage.feature.workspace.description",
     descDefault:
-      "Mint Hypercerts to create permanent, tamper-proof impact certificates. Evidence is attested via EAS for independent verification.",
+      "Keep logic models in a workspace, restore any earlier version, and share them with your team or by a read-only link.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none">
         <path
@@ -161,8 +161,8 @@ function FeaturesSection() {
           </Heading>
           <p className={styles.sectionSubtitle}>
             <Translate id="homepage.features.subtitle">
-              From AI-powered model generation to blockchain-verified impact
-              certificates — MUSE provides the full toolkit.
+              From AI-powered model generation to team workspaces and
+              sharing — MUSE provides the full toolkit.
             </Translate>
           </p>
         </div>
@@ -190,14 +190,15 @@ function CTASection() {
           </Heading>
           <p className={styles.ctaDesc}>
             <Translate id="homepage.cta.description">
-              No account required. Explore the canvas, generate a model with AI,
-              and browse research evidence — all for free.
+              Browse research evidence and explore the canvas without an
+              account. Sign in with Google or GitHub to generate with AI and
+              save your work.
             </Translate>
           </p>
           <div className={styles.heroActions}>
             <Link
               className={styles.btnPrimary}
-              href="https://muse.beaconlabs.io"
+              href="https://musecanvas.app"
             >
               <Translate id="homepage.cta.launch">Try Muse Now</Translate>
               <span aria-hidden="true"> →</span>
@@ -221,7 +222,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Muse Documentation"
-      description="Evidence-based impact planning with Theory of Change methodology. Build AI-powered logic models, link to research evidence, and mint blockchain-verified impact claims."
+      description="Evidence-based impact planning with Theory of Change methodology. Build AI-powered logic models, link them to research evidence, and share them with your team."
     >
       <HeroSection />
       <FeaturesSection />

@@ -44,8 +44,8 @@ MUSE brings logic modeling into the digital age:
 2. **AI Generation** — Describe your intervention and let AI generate a complete logic model
 3. **Evidence Linking** — AI automatically searches and links relevant research to each causal connection
 4. **Metrics** — Attach measurable indicators to any stage of your model
-5. **Blockchain Verification** — Mint your logic model as a Hypercert for transparent, verifiable impact claims *(minting is temporarily disabled while the flow is being reworked)*
-6. **Sharing** — Save to IPFS and share your logic model with anyone via a permanent link
+5. **Saving and Version History** — Save your logic model to a workspace; every save is kept as a version you can restore
+6. **Sharing** — Share with workspace members or with anyone via a read-only link
 
 ## Example: Education Program
 

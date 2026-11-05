@@ -13,7 +13,7 @@ Understanding how to read an evidence page will help you evaluate how well a stu
 ## Getting to an Evidence Page
 
 - **From Search**: Click any evidence card on the [Evidence Search page](/docs/user-guide/evidence-search)
-- **Direct URL**: Evidence pages follow the pattern `muse.beaconlabs.io/evidence/[slug]`, where `[slug]` is the unique identifier for that study
+- **Direct URL**: Evidence pages follow the pattern `musecanvas.app/evidence/[slug]`, where `[slug]` is the unique identifier for that study
 
 ## The Page Header
 

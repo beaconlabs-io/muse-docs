@@ -25,7 +25,11 @@ The whole process takes about **1 minute**.
 
 ### Step 1: Open the Canvas
 
-Go to [muse.beaconlabs.io/canvas](https://muse.beaconlabs.io/canvas) or click **"Canvas"** in the top navigation bar.
+Go to [musecanvas.app/canvas](https://musecanvas.app/canvas) or click **"Canvas"** in the sidebar.
+
+:::info Sign-In Required
+AI generation requires an account. If you're signed out, the dialog still opens, but the Generate button is replaced by **"Sign in to generate"**, which lets you sign in with Google or GitHub and brings you back to the same page.
+:::
 
 :::tip Starting Fresh
 If you already have nodes on the canvas, the AI will add to what's there. If you want a clean slate, go to **More → Clear All** before generating.
@@ -55,7 +59,7 @@ Your description should answer: *What does your program do, for whom, and what c
 
 Below the text box, you may see a toggle labeled **"Search external academic papers."** When enabled, MUSE will also search [Semantic Scholar](https://www.semanticscholar.org/) for additional academic papers related to your logic model's causal connections.
 
-This toggle is only shown on deployments where external paper search is enabled, so you may not see it on every environment.
+This toggle is only shown on deployments where external paper search is enabled, so you may not see it on every environment. In a workspace with [private mode](./accounts-workspaces#private-mode) turned on, external paper search is not run.
 
 :::info About External Papers
 External papers are shown as **reference material only** — they are not scored by MUSE's AI and do not receive blockchain attestations. They supplement the curated evidence database with broader academic literature, including TLDR summaries and citation counts to help you quickly assess relevance.
@@ -157,16 +161,17 @@ If the generation encounters an issue, MUSE will display a specific error messag
 | **Rate limit** | Too many requests in a short time | Wait a minute before retrying |
 | **Timeout** | The operation took too long | Try a simpler description, or try again later |
 | **Invalid input** | Issue with the description | Modify your description and try again |
+| **Session expired** | Your sign-in expired during the run | Sign in again and retry |
 
 If the error persists:
 
 1. Close the dialog
 2. Check your internet connection
-3. Try the [dev version](https://dev.muse.beaconlabs.io) to see if the issue is isolated to the production environment
+3. Try the [dev version](https://dev.musecanvas.app) to see if the issue is isolated to the production environment
 
 ## Next Steps
 
 - [Turn the generated metrics into a Measurement Recipe →](./recipe)
 - [Add or edit nodes manually →](./manual-editing)
 - [Search the evidence database →](./evidence-search)
-- [Save and share your canvas →](./saving-sharing)
+- [Save and share your logic model →](./saving-sharing)

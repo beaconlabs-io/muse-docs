@@ -1,135 +1,153 @@
 ---
 sidebar_position: 7
 title: Saving & Sharing
-description: How to save, export, and share your logic models and measurement recipes in MUSE
+description: How to save, version, share, and export your logic models and measurement recipes in MUSE
 ---
 
 # Saving & Sharing
 
-Once you've built a logic model you're proud of, MUSE gives you several ways to preserve and share it. You can save it permanently to IPFS for a shareable link, export it as an image for presentations, download the raw data as JSON, hand off the [Measurement Recipe](./recipe) to program operators as HTML, or simply rely on the automatic local browser save.
+MUSE stores saved logic models in your [workspace](./accounts-workspaces). From there you can restore earlier versions, share a model with teammates or by link, export it as an image or JSON, and hand off the [Measurement Recipe](./recipe) as HTML.
 
-## Automatic Local Save
+Saving, version history, and sharing require [signing in](./accounts-workspaces#signing-in). Exporting works signed out.
 
-Your canvas is automatically saved to your browser's local storage as you work. Every time you add a node, edit a title, or draw a connection, the change is saved immediately.
+## Drafts in Your Browser
 
-This means:
+While you edit, MUSE keeps an unsaved **draft** of the canvas in your browser. If you reload the page or close the tab, the draft is restored the next time you open the same logic model, with a **"Restored your unsaved draft"** notice. Click **Discard** on that notice to drop the draft and go back to the last saved version.
 
-- You don't need to click a "Save" button while working
-- If you close your browser tab and come back later (on the same device and browser), your canvas will be exactly as you left it
-- The save is specific to your browser — it won't appear on a different device or browser
-
-:::warning Local Storage Has Limits
-Your browser's local storage is tied to your specific device and browser. If you clear your browser data, switch computers, or use a different browser, your locally saved canvas will not be available. Use **Save to IPFS** to create a permanent, device-independent copy.
+:::warning A Draft Is Not a Save
+A draft exists only in the browser it was made in. It is not available on other devices, and it is deleted when you sign out or delete your account. Click **Save** to keep your work.
 :::
 
-## Save to IPFS
+## Saving a Logic Model
 
-IPFS (InterPlanetary File System) is a decentralized storage network. Saving your logic model to IPFS creates a permanent, content-addressed copy that anyone can access via a unique URL — no account or sign-in required to view it.
+1. Click **Save** in the canvas header. If you're signed out, the sign-in dialog opens first; after signing in you return to the same canvas with your draft intact.
+2. The first save creates the logic model in your active workspace, and the address changes to `musecanvas.app/canvas/[id]`.
+3. Each later save stores a new **version**. The button is disabled while there is nothing new to save.
 
-### How to Save to IPFS
+There is no automatic saving to the workspace: a version is created only when you click **Save**.
 
-1. Click the **"More"** button in the toolbar
-2. Select **"Save to IPFS"** from the dropdown menu
-3. MUSE will upload your logic model to IPFS (this takes a few seconds)
-4. A dialog will appear showing:
-   - **IPFS hash** — The unique content identifier for your logic model
-   - **Shareable URL** — A direct link to view your model (format: `muse.beaconlabs.io/canvas/[ipfs-hash]`)
-   - **Canvas preview** — A thumbnail of your logic model
-5. Copy the URL to your clipboard with the copy button, or share it directly on **X (Twitter)** using the share button
+A new logic model is named "Untitled". Click the title in the canvas header to rename it; press Enter to confirm or Esc to cancel.
 
-![The Save to IPFS dialog after a successful upload, showing the IPFS hash, a shareable URL, a canvas preview thumbnail, and Copy and X share buttons.](/img/screenshots/en/ipfs-save-dialog.png)
+:::info Limits
+An empty canvas cannot be saved, and a single logic model can be at most 5 MB.
+:::
 
-### Sharing the URL
+## Finding Your Logic Models
 
-Anyone with the shareable URL can view your logic model in read-only mode. They'll see the full canvas with all your nodes, connections, and evidence links — but they won't be able to edit it (the canvas is view-only when accessed via a shared link).
+Click **Logic models** in the sidebar to list the logic models in the active workspace that you can access. Each entry shows its title, when it was last updated, whether you own it or it was shared with you, and whether workspace or link sharing is turned on.
 
-This is ideal for:
-- Sharing with funders or stakeholders for review
-- Embedding in reports or grant applications
-- Archiving a snapshot of your logic model at a point in time
+- Click a title to open the logic model on the canvas.
+- Click **New logic model** to start an empty canvas.
+- Click the trash icon to delete a logic model. Deleting removes all of its versions and shares and cannot be undone.
 
-:::info IPFS is Permanent
-Once a logic model is saved to IPFS, it cannot be deleted or changed. The content is permanently stored on the decentralized network. If you make changes to your canvas and want to share the updated version, you'll need to save to IPFS again — you'll get a new hash and a new URL for the updated version.
+The list follows the workspace selected in the switcher at the top of the sidebar. Switch workspaces to see the logic models stored elsewhere.
+
+## Version History
+
+Every save is kept. To look back:
+
+1. Open a saved logic model and click the **History** (clock) icon in the canvas header.
+2. The panel lists each version with its number, date, and author.
+3. Click **Restore** on a version to bring it back.
+
+Restoring does not delete anything: the chosen version is copied as the newest version. If the canvas has unsaved changes, MUSE asks for confirmation first because they will be replaced.
+
+**Restore** is available to the owner and to people with edit access.
+
+## Sharing
+
+The owner of a saved logic model can share it by clicking the **Share** icon in the canvas header. The dialog has three independent settings; when more than one applies to a person, the strongest one wins.
+
+| Setting | Who gets access | Options |
+|---------|-----------------|---------|
+| **People** | Individual members of the workspace | Can view / Can edit |
+| **Everyone in the workspace** | All members of the workspace the model is stored in | No access / Can view / Can edit |
+| **Anyone with the link** | Anyone who has the link, with no sign-in | On / Off (view only) |
+
+### Sharing with Workspace Members
+
+Under **People**, pick a member, choose **Can view** or **Can edit**, and click **Add a member**. You can change the role or remove the person later from the same list. To give the whole workspace the same access, use **Everyone in the workspace** instead.
+
+Only members of the workspace can be added. To collaborate with someone new, [invite them to the workspace](./accounts-workspaces#inviting-members) first.
+
+People with **Can view** open the logic model read-only: they can look around, export an image or JSON, and read the recipe, but cannot edit, generate, or save. People with **Can edit** can change and save the logic model and restore versions.
+
+### Sharing by Link
+
+Turn on **Anyone with the link** and click **Copy link**. The link has the form `musecanvas.app/canvas/shared/[token]` and opens a read-only view of the latest saved version, with no account needed.
+
+Turn the switch off to stop sharing. The old link then shows "This link is no longer valid".
+
+:::info Private Mode
+In a workspace with [private mode](./accounts-workspaces#private-mode) turned on, link sharing is unavailable, and turning private mode on revokes every existing link in that workspace.
 :::
 
 ## Export as Image
 
-Export your entire canvas as a PNG image file that you can use in presentations, reports, or documents.
+Export your entire canvas as a PNG for presentations, reports, or documents.
 
-### How to Export an Image
+1. Click **More** in the canvas header.
+2. Select **Export Image**.
+3. In the dialog, click **Copy image** to put it on the clipboard or **Download** to save a PNG file.
 
-1. Click the **"More"** button in the toolbar
-2. Select **"Export Image"** from the dropdown
-3. A PNG file will download to your computer automatically
-4. Find it in your browser's downloads folder
-
-The exported image captures your **entire canvas** — not just the portion visible on screen. Even if parts of your logic model are off-screen, the full model will be included in the export.
-
-A small **"MUSE" credit** is embedded in the corner of the exported PNG. This is intentional — it keeps the export traceable back to MUSE when it's shared externally or included in reports.
+The export captures the **entire canvas**, not just the part visible on screen. It is framed by a header reading "MUSE by Beaconlabs" and a footer with `musecanvas.app`, which keeps the image traceable when it is shared externally.
 
 :::tip Best Practices for Image Export
-Before exporting, zoom out and use the minimap to make sure all your nodes are arranged the way you want them to appear. The export reflects the current arrangement of your canvas. If the layout has drifted from editing, run **More → Auto Layout** first to tidy it up.
+The export reflects the current arrangement of your canvas. If the layout has drifted from editing, run **More → Auto Layout** first to tidy it up.
 :::
 
 ## Export as JSON
 
-Export your logic model as a structured JSON data file. This is useful for technical users who want to analyze the data, import it into another tool, or keep a backup of the exact node and edge data.
+Export your logic model as a structured JSON file, for analysis in another tool or as a backup of the exact node and edge data.
 
-### How to Export JSON
+1. Click **More** in the canvas header.
+2. Select **Export JSON**.
+3. A `.json` file downloads automatically.
 
-1. Click the **"More"** button in the toolbar
-2. Select **"Export JSON"** from the dropdown
-3. A `.json` file will download to your computer automatically
-
-The JSON file contains all nodes (with their types, titles, descriptions, and metrics) and all edges (with their connections and any linked evidence). This is the raw data that powers your canvas.
-
-:::info Who Is JSON Export For?
-JSON export is primarily for technical users — developers, data analysts, or researchers who want to work with the logic model data programmatically. If you just need to share your model with stakeholders, the IPFS link or image export is easier.
-:::
+The file contains all nodes (types, titles, descriptions, and metrics) and all edges (connections and linked evidence). MUSE has no JSON import, so this file cannot be loaded back onto the canvas.
 
 ## Download the Measurement Recipe as HTML
 
-If you've generated a [Measurement Recipe](./recipe) for your canvas, you can hand it off to program operators as a self-contained HTML file.
-
-### How to Download the Recipe
+If you've generated a [Measurement Recipe](./recipe), you can hand it off to program operators as a self-contained HTML file.
 
 1. Make sure a recipe has been generated (the Recipe tab shows recipe content, not an empty state).
-2. Click the **"More"** button in the toolbar.
-3. Under the **Recipe** section, click **"Download HTML"**.
-4. A single `.html` file downloads to your browser's downloads folder.
+2. Click **More** in the canvas header.
+3. Under the **Recipe** section, click **Download HTML**.
 
-The file is fully self-contained — no external assets are needed to view it — so it can be emailed, shared over messaging, or archived as-is.
+The file needs no external assets, so it can be emailed, shared over messaging, or archived as-is.
 
 :::info When Download HTML is disabled
-If the Recipe has never been generated, or the previous generation failed, the **Download HTML** menu item is disabled. Switch to the Recipe tab and generate one first.
+If the Recipe has never been generated, or the previous generation failed, **Download HTML** is disabled. Switch to the Recipe tab and generate one first.
 :::
 
 ## Clear All
 
-If you want to start fresh with a completely empty canvas:
+To empty the canvas:
 
-1. Click the **"More"** button in the toolbar
-2. Select **"Clear All"**
-3. A confirmation dialog will appear asking if you're sure
-4. Click **"Confirm"** to erase all nodes and edges from the canvas
+1. Click **More** in the canvas header.
+2. Select **Clear All** and confirm.
 
-:::warning This Cannot Be Undone
-Clearing the canvas removes all nodes and edges permanently from local storage. There is no undo for this action. If you want to keep a copy of your current work, save to IPFS or export as JSON before clearing.
-:::
+This removes every node and edge from the canvas. Versions you have already saved stay in **History**.
+
+## Older IPFS Links
+
+Earlier versions of MUSE shared logic models through **Save to IPFS**. That feature has been removed, but links of the form `musecanvas.app/canvas/[ipfs-hash]` that were created with it still open in read-only mode.
 
 ## Summary: Which Option to Use?
 
 | Goal | Best Option |
 |------|------------|
-| Share with a colleague or stakeholder | Save to IPFS → Copy the URL |
-| Use in a slide deck or report | Export as Image |
-| Back up your work or use the data elsewhere | Export as JSON |
+| Keep working on a logic model over time | Save |
+| Continue on another device | Save, then sign in on the other device and open it from Logic models |
+| Go back to an earlier state | History → Restore |
+| Work on a model together with teammates | Share → People or Everyone in the workspace, with Can edit |
+| Show a model to someone without an account | Share → Anyone with the link |
+| Use in a slide deck or report | Export Image |
+| Use the data elsewhere | Export JSON |
 | Hand a measurement plan to a program operator | Generate Recipe → Download HTML |
-| Continue working on another device | Save to IPFS → Open the URL on the other device |
-| Post on social media | Save to IPFS → Share to X |
-| Start over | Clear All (after saving if needed) |
 
 ## Next Steps
 
+- [Set up a workspace and invite your team →](./accounts-workspaces)
 - [Generate a Measurement Recipe for your metrics →](./recipe)
 - [Go back to editing your canvas →](./canvas-overview)

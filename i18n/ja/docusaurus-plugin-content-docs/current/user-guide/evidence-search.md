@@ -12,7 +12,7 @@ MUSEには、研究エビデンスを集めたデータベースが搭載され�
 
 ## エビデンス検索へのアクセス
 
-上部のナビゲーションバーにある **「Evidence」** をクリックすると、エビデンス検索ページ（[muse.beaconlabs.io/search](https://muse.beaconlabs.io/search)）が開きます。
+サイドバーにある **「エビデンス」** をクリックすると、エビデンス検索ページ（[musecanvas.app/search](https://musecanvas.app/search)）が開きます。
 
 ページ上部に検索バーが表示され、その下にはすべての研究エビデンスがエビデンスカードのグリッド形式で表示されます。
 
