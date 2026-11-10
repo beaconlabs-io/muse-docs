@@ -135,10 +135,6 @@ const config: Config = {
               label: "Muse App",
               href: "https://musecanvas.app",
             },
-            {
-              label: "Dev App",
-              href: "https://dev.musecanvas.app",
-            },
           ],
         },
         {

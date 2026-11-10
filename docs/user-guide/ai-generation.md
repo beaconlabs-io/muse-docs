@@ -167,7 +167,6 @@ If the error persists:
 
 1. Close the dialog
 2. Check your internet connection
-3. Try the [dev version](https://dev.musecanvas.app) to see if the issue is isolated to the production environment
 
 ## Next Steps
 

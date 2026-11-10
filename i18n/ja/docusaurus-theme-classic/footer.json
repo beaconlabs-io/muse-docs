@@ -23,10 +23,6 @@
     "message": "Muse App",
     "description": "The label of footer link with label=Muse App linking to https://musecanvas.app"
   },
-  "link.item.label.Dev App": {
-    "message": "開発版アプリ",
-    "description": "The label of footer link with label=Dev App linking to https://dev.musecanvas.app"
-  },
   "link.item.label.X": {
     "message": "X",
     "description": "The label of footer link with label=X linking to https://x.com/beaconlabs_io"

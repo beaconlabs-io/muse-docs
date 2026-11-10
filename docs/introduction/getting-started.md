@@ -30,19 +30,7 @@ MUSE is designed for anyone involved in impact planning and evaluation:
 
 ## Access MUSE
 
-### Production
-
-Use the main application for real impact planning:
-
-- **URL**: [https://musecanvas.app](https://musecanvas.app)
-- **Use for**: Logic models you intend to keep and share
-
-### Development Environment
-
-A staging environment that receives new features first:
-
-- **URL**: [https://dev.musecanvas.app](https://dev.musecanvas.app)
-- **Use for**: Trying out upcoming features. Accounts and saved logic models are separate from production
+MUSE runs at [https://musecanvas.app](https://musecanvas.app).
 
 :::info Language Support
 MUSE is available in **English** and **Japanese**. Use the language switcher at the bottom of the sidebar to switch at any time.
@@ -54,7 +42,7 @@ Browsing evidence and building a logic model by hand on the canvas work without 
 
 ## Quick Start: Your First 5 Minutes
 
-1. **Visit the App** — Go to [musecanvas.app](https://musecanvas.app) (or the [dev app](https://dev.musecanvas.app))
+1. **Visit the App** — Go to [musecanvas.app](https://musecanvas.app)
 2. **Sign in** — Click "Sign in" at the bottom of the sidebar and continue with Google or GitHub
 3. **Navigate to Canvas** — Click "Canvas" in the sidebar
 4. **Generate with AI** — Click the "Generate Logic Model" button and describe your intervention
