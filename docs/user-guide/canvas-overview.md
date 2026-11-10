@@ -33,21 +33,43 @@ The toolbar on the right of the header shows actions relevant to whichever tab i
 
 ## The Toolbar
 
-At the top of the canvas, you'll find the main toolbar with all the controls you need:
+The right side of the canvas header is the toolbar. On the **Canvas** tab it holds, from left to right:
 
 | Button | What It Does |
 |--------|--------------|
-| **Generate Logic Model** | Opens the AI generation dialog — describe your program and let AI build the logic model for you (requires signing in) |
-| **Add Node** | Opens the centered Node Editor Dialog to manually add a new node to the canvas |
-| **Save** | Saves the logic model to your active workspace as a new version. Signed out, it opens the sign-in dialog instead |
-| **History** (clock icon) | Opens the version history of a saved logic model |
-| **Share** (share icon) | Opens the sharing settings. Shown only to the owner of a saved logic model |
+| **Generate Logic Model** | Opens the AI generation dialog. Requires signing in |
+| **Add Node** | Opens the Node Editor Dialog to add a node by hand |
+| **Save** | Saves the logic model to the active workspace |
+| **History** (clock icon) | Opens the version history |
+| **Share** (share icon) | Opens the sharing settings |
 | **Start tour** (help icon) | Replays the guided tour |
-| **More** | A dropdown menu with additional actions (see below) |
+| **More** (⋮) | Opens a menu with layout, export, recipe, and clear actions |
 
-On the **Recipe** tab, the first two buttons are replaced by the recipe actions (**Generate recipe**, **Regenerate**, **Download HTML**). Saving, history, and sharing are covered in [Saving & Sharing](./saving-sharing).
+On the **Recipe** tab, **Generate Logic Model** and **Add Node** are replaced by the recipe actions: **Generate recipe**, **Regenerate**, and **Download HTML**.
 
-### The "More" Dropdown Menu
+### Save
+
+**Save** stores the canvas in the workspace selected in the sidebar. The first save creates the logic model, and each later save adds a version.
+
+- The button is disabled while there is nothing new to save, and reads **Saving...** while a save is in progress.
+- If you are signed out, clicking it opens the sign-in dialog. Your draft is still on the canvas when you come back.
+- Nothing is saved to the workspace automatically. Until you click **Save**, your edits exist only as a draft in the browser.
+
+### History
+
+The **History** icon appears once the logic model has been saved. It opens a panel listing every version with its number, date, and author. **Restore** copies the chosen version as the newest one, so no version is lost.
+
+### Share
+
+The **Share** icon appears on a saved logic model, and only for its owner. It opens a dialog with three independent settings:
+
+- **People** gives individual workspace members view or edit access.
+- **Everyone in the workspace** gives all members the same access.
+- **Anyone with the link** turns on a read-only link that needs no account.
+
+Each of these is explained in [Saving & Sharing](./saving-sharing#sharing).
+
+### The "More" Menu
 
 Click **More** to access additional actions, grouped by section:
 
@@ -66,7 +88,17 @@ Click **More** to access additional actions, grouped by section:
 
 - **Clear All** — Remove everything from the canvas and start fresh
 
-When you open a logic model you can only view, **Auto Layout** and **Clear All** are hidden, along with the Generate, Add Node, and Save buttons.
+### What Changes With Your Access
+
+The toolbar shows only the actions you can use on the logic model that is open.
+
+| Situation | Toolbar |
+|-----------|---------|
+| New, unsaved canvas | Everything except **History** and **Share** |
+| Saved logic model you own | Everything |
+| Shared with you, **Can edit** | Everything except **Share** |
+| Shared with you, **Can view** | **History** (without Restore) and **More**, which keeps **Export Image**, **Export JSON**, and the recipe items |
+| Opened from a share link | **More** only, with the same items |
 
 ## The Five Node Types
 
