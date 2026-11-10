@@ -18,11 +18,11 @@ The concrete actions taken by a program or intervention. Activities are the star
 
 ---
 
-### Attestation
+### Auto Layout
 
-**Japanese**: アテステーション
+**Japanese**: 自動レイアウト
 
-A cryptographic statement recorded on a blockchain that verifies a specific claim. In MUSE, attestations are created using the Ethereum Attestation Service (EAS) on the Base Sepolia network. Attestations provide a tamper-evident, publicly verifiable record that a piece of evidence has been reviewed and published. Each evidence file in the evidence repository receives an attestation on merge.
+A tidy-up pass that arranges canvas nodes into a left-to-right flow. Auto Layout runs automatically once, immediately after AI generation, and can be re-triggered at any time from the **More** menu on the canvas toolbar. Auto Layout only affects visual positions; it does not change titles, descriptions, metrics, or connections.
 
 ---
 
@@ -30,7 +30,15 @@ A cryptographic statement recorded on a blockchain that verifies a specific clai
 
 **Japanese**: キャンバス
 
-MUSE's interactive workspace for building Logic Models. The canvas is powered by React Flow and allows users to create, connect, and annotate nodes representing the stages of a Theory of Change. Users can drag and drop nodes, draw edges between them, attach Evidence Cards, and generate Hypercerts directly from the canvas.
+MUSE's interactive workspace for building Logic Models. The canvas is powered by React Flow and allows users to create, connect, and annotate nodes representing the stages of a Logic Model. Users can drag and drop nodes, draw edges between them, and attach Evidence Cards. The canvas view is split into a **Canvas** tab (for building) and a **Recipe** tab (for viewing generated Measurement Recipes).
+
+---
+
+### Cautions
+
+**Japanese**: 注意点
+
+A short list (1–3 items) of practical caveats attached to each metric in a Measurement Recipe. Cautions describe biases, ethical issues, or data-quality risks that are specific to that metric — for example, self-report bias in a survey question or seasonality effects on attendance counts.
 
 ---
 
@@ -42,11 +50,11 @@ The number of times an academic paper has been cited by other papers. In MUSE, c
 
 ---
 
-### EAS
+### Data Collection Method
 
-**Japanese**: EAS（イーサリアム・アテステーション・サービス）
+**Japanese**: データ収集方法
 
-Ethereum Attestation Service. The open protocol used by MUSE to create on-chain attestations. EAS provides a standardized schema for making verifiable claims on the Ethereum blockchain. MUSE uses EAS on the Base Sepolia test network to attest that evidence files have been validated and stored on IPFS.
+The paragraph in a Measurement Recipe entry that describes *how* the data for a metric is gathered — for example, an online survey, administrative records, direct observation, or web analytics. The Recipe agent derives this from the metric name and the parent Output/Outcome card's context.
 
 ---
 
@@ -70,7 +78,7 @@ The observed outcome or impact of an intervention as reported in a research stud
 
 **Japanese**: エビデンスカード
 
-A standardized format for presenting a single piece of research evidence in MUSE. Each Evidence Card captures the core finding of a study as an **Intervention → Indicator → Short-term Outcome** relationship, along with the effect category and strength-of-evidence rating. Evidence Cards can be attached to nodes on the canvas to ground a Logic Model in empirical research. Note: Evidence Cards are distinct from External Papers — curated evidence is scored by AI and backed by blockchain attestations, while external papers are shown as reference material only.
+A standardized format for presenting a single piece of research evidence in MUSE. Each Evidence Card captures the core finding of a study as an **Intervention → Indicator → Short-term Outcome** relationship, along with the effect category and strength-of-evidence rating. Evidence Cards can be attached to nodes on the canvas to ground a Logic Model in empirical research. Note: Evidence Cards are distinct from External Papers — curated evidence is scored by AI, while external papers are shown as reference material only.
 
 ---
 
@@ -78,7 +86,7 @@ A standardized format for presenting a single piece of research evidence in MUSE
 
 **Japanese**: 外部学術論文
 
-An academic paper retrieved from external databases (such as Semantic Scholar) that is displayed alongside curated evidence as reference material. External papers are not scored by MUSE's AI and do not receive blockchain attestations. They provide supplementary context from the broader academic literature, including TLDR summaries and citation counts to help users quickly assess relevance.
+An academic paper retrieved from external databases (such as Semantic Scholar) that is displayed alongside curated evidence as reference material. External papers are not scored by MUSE's AI. They provide supplementary context from the broader academic literature, including TLDR summaries and citation counts to help users quickly assess relevance.
 
 ---
 
@@ -87,22 +95,6 @@ An academic paper retrieved from external databases (such as Semantic Scholar) t
 **Japanese**: ゴール
 
 The plain-language description of what you want to achieve, which you provide to MUSE's AI to generate a logic model. A clear, well-structured goal that includes the target population, problem, and desired change produces the best results.
-
----
-
-### Gas Fee
-
-**Japanese**: ガス代
-
-The transaction cost paid to the blockchain network when performing an on-chain operation, such as creating an attestation or minting a Hypercert. Gas fees are denominated in the network's native token (ETH on Base Sepolia) and fluctuate based on network congestion. Users must have a connected wallet with sufficient funds to pay gas fees when performing blockchain operations in MUSE.
-
----
-
-### Hypercert
-
-**Japanese**: ハイパーサート
-
-An on-chain impact certificate that represents a verified claim of social impact. In MUSE, Logic Models can be used to generate Hypercerts that document the evidence base underlying a program's impact claims. Hypercerts are minted on the blockchain and provide a publicly verifiable, persistent record of impact for funders, evaluators, and beneficiaries. In the Japanese interface, Hypercerts are displayed as "インパクト証明書" (Impact Certificate).
 
 ---
 
@@ -116,17 +108,9 @@ Long-term societal change; the ultimate goal of an intervention. Impact sits at 
 
 ### Intermediate Outcome
 
-**Japanese**: 中間アウトカム
+**Japanese**: 中期アウトカム
 
 Medium-term changes resulting from short-term outcomes. In a Logic Model, Intermediate Outcomes represent the behavioral, social, or systemic shifts that occur after the immediate effects of an intervention take hold — for example, increased economic self-sufficiency following improved financial literacy. Intermediate Outcomes bridge Short-term Outcomes and long-term Impact.
-
----
-
-### IPFS
-
-**Japanese**: IPFS（惑星間ファイルシステム）
-
-InterPlanetary File System. A decentralized, peer-to-peer storage network used by MUSE to store evidence files and Logic Models. When evidence is attested, its MDX file is uploaded to IPFS via Pinata and the resulting content identifier (CID) is included in the on-chain attestation record. This ensures that evidence content is permanently accessible and cannot be altered after attestation.
 
 ---
 
@@ -134,7 +118,7 @@ InterPlanetary File System. A decentralized, peer-to-peer storage network used b
 
 **Japanese**: ロジックモデル
 
-A visual representation of a Theory of Change that maps the causal pathway from Activities to Impact. A Logic Model in MUSE consists of interconnected nodes — Activities, Outputs, Short-term Outcomes, Intermediate Outcomes, and Impact — connected by directed edges. Each causal link can be grounded in Evidence Cards to demonstrate that the assumed relationship is supported by research.
+A visual representation that maps the causal pathway from Activities to Impact. A Logic Model in MUSE consists of interconnected nodes — Activities, Outputs, Short-term Outcomes, Intermediate Outcomes, and Impact — connected by directed edges. Each causal link can be grounded in Evidence Cards to demonstrate that the assumed relationship is supported by research.
 
 ---
 
@@ -146,11 +130,27 @@ Maryland Scientific Methods Scale. A 0-to-5 rating system used in MUSE to assess
 
 ---
 
+### Measurement Recipe
+
+**Japanese**: 測定レシピ
+
+A practitioner-ready measurement plan generated by MUSE's Recipe agent from the metrics on a Logic Model. Each Recipe entry contains **Measurement Steps**, a **Data Collection Method**, a **Frequency**, an optional **Target Value**, and **Cautions**. Recipes are only generated for Output, Short-term Outcome, and Intermediate Outcome cards. See the [Measurement Recipe](../user-guide/recipe.md) user guide for full detail.
+
+---
+
+### Measurement Steps
+
+**Japanese**: 測定手順
+
+The ordered list (3–6 items) of concrete, imperative actions that a program operator can execute to actually collect the measurement for a metric. Measurement Steps are the core of a Measurement Recipe entry and are written to be executable by an M&E beginner using only basic tools (spreadsheet, mini-survey, attendance log).
+
+---
+
 ### Metrics
 
 **Japanese**: メトリクス
 
-Measurable indicators attached to Logic Model nodes. Metrics define how the performance or outcome of each stage in the Logic Model will be measured in practice — for example, "number of training sessions delivered" as a metric for an Activity node, or "employment rate at 6 months" as a metric for an Outcome node. Adding metrics to nodes makes a Logic Model evaluable and actionable.
+Lightweight, measurable indicators attached to Logic Model nodes. A MUSE metric carries only a **name** and an optional **description** — the operational details (measurement method, frequency, target value, cautions) are generated separately by the [Measurement Recipe](../user-guide/recipe.md) agent from the name plus the parent card's context. This two-stage design keeps the Logic Model as a lightweight outline and puts the practitioner-ready measurement plan into a dedicated Recipe.
 
 ---
 
@@ -162,11 +162,27 @@ A card on the canvas representing a single stage in a Logic Model. Each node has
 
 ---
 
+### Node Editor Dialog
+
+**Japanese**: ノードエディタダイアログ
+
+The centered, two-column modal used to add a new node or edit an existing one. The left column holds the node type, title, and description; the right column holds the metrics list, where each metric is an inline-expanding card (only one expanded at a time). Opened by clicking **Add Node** in the toolbar, or by double-clicking / pencil-clicking an existing node on the canvas.
+
+---
+
 ### Outputs
 
 **Japanese**: アウトプット
 
 The direct products or deliverables that result from carrying out Activities. Outputs are tangible and immediately countable — for example, "100 participants trained" or "50 reports published." Outputs are distinct from Outcomes: they describe what was produced, not what changed as a result. In a Logic Model, Outputs sit between Activities and Short-term Outcomes.
+
+---
+
+### Private Mode
+
+**Japanese**: 非公開モード
+
+A workspace setting that keeps its logic models inside the workspace. While it is on, external paper search is not run during AI generation and link sharing is unavailable; turning it on revokes every existing share link in the workspace. See [Accounts & Workspaces](../user-guide/accounts-workspaces.md#private-mode).
 
 ---
 
@@ -182,7 +198,15 @@ Randomized Controlled Trial. The gold standard of experimental research, corresp
 
 **Japanese**: Semantic Scholar（セマンティック・スカラー）
 
-An AI-powered academic search engine developed by the Allen Institute for AI. MUSE can optionally search Semantic Scholar to find academic papers related to causal connections in your logic model. Papers from Semantic Scholar appear as reference material (External Papers) and are distinct from MUSE's curated, attested evidence.
+An AI-powered academic search engine developed by the Allen Institute for AI. MUSE can optionally search Semantic Scholar to find academic papers related to causal connections in your logic model. Papers from Semantic Scholar appear as reference material (External Papers) and are distinct from MUSE's curated evidence.
+
+---
+
+### Share Link
+
+**Japanese**: 共有リンク
+
+A link that opens a read-only view of a saved logic model without signing in. The owner turns it on with **Anyone with the link** in the Share dialog and can turn it off again at any time. See [Saving & Sharing](../user-guide/saving-sharing.md#sharing-by-link).
 
 ---
 
@@ -194,16 +218,16 @@ Immediate changes in knowledge, attitudes, skills, or behavior that result from 
 
 ---
 
-### Theory of Change
+### Version
 
-**Japanese**: セオリー・オブ・チェンジ
+**Japanese**: バージョン
 
-A methodology for planning, implementing, and evaluating social interventions. A Theory of Change articulates the assumptions underlying a program by mapping out the complete causal pathway from Activities to Impact, identifying what needs to happen at each stage and why. In MUSE, a Logic Model is the visual expression of a Theory of Change, and Evidence Cards are used to validate each causal assumption with empirical research.
+A snapshot of a logic model created each time you click **Save**. All versions are kept in the model's history, and restoring one copies it as the newest version. See [Saving & Sharing](../user-guide/saving-sharing.md#version-history).
 
 ---
 
-### Wallet
+### Workspace
 
-**Japanese**: ウォレット
+**Japanese**: ワークスペース
 
-A cryptocurrency wallet used to sign and submit blockchain transactions in MUSE. Users connect their wallet (via RainbowKit) to perform on-chain operations such as creating EAS attestations or minting Hypercerts. The wallet holds the private key needed to authorize transactions and pay Gas Fees. MUSE supports standard Ethereum-compatible wallets (e.g., MetaMask).
+The place where saved logic models are stored. Every account has a personal workspace, and shared workspaces can be created to collaborate with invited members, each with the role Owner, Admin, or Member. See [Accounts & Workspaces](../user-guide/accounts-workspaces.md).

@@ -1,16 +1,18 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: Searching Evidence
 description: How to search and filter the research evidence database in MUSE
 ---
 
 # Searching Evidence
 
-MUSE includes a curated database of peer-reviewed research evidence. The Evidence Search page lets you browse, filter, and read the studies that underpin logic model connections. Whether you're looking for evidence to support a specific causal claim or simply exploring what the research says about your topic area, this is your starting point.
+MUSE includes a curated database of research evidence. The Evidence Search page lets you browse, filter, and read the studies that underpin logic model connections. Whether you're looking for evidence to support a specific causal claim or simply exploring what the research says about your topic area, this is your starting point.
+
+![The Evidence Search page: a keyword search bar with Effect and Strength filters, a result count, and a grid of evidence cards below.](/img/screenshots/en/evidence-search.png)
 
 ## Getting to Evidence Search
 
-Click **"Evidence"** in the top navigation bar to open the Evidence Search page at [muse.beaconlabs.io/search](https://muse.beaconlabs.io/search).
+Click **"Evidence"** in the sidebar to open the Evidence Search page at [musecanvas.app/search](https://musecanvas.app/search).
 
 You'll see a search bar at the top and a grid of evidence cards below, showing all available research.
 
@@ -71,7 +73,7 @@ Each result appears as a card in the grid. Here's what you'll see on each card:
 
 ## Viewing Full Evidence
 
-Click on any evidence card to open the full Evidence Detail page for that study. There you'll find the complete research summary, methodology details, data sources, citations, and blockchain attestation records.
+Click on any evidence card to open the full Evidence Detail page for that study. There you'll find the complete research summary, methodology details, data sources, and citations.
 
 :::info How Evidence Links to Your Canvas
 When MUSE's AI generates a logic model, it searches this same database and automatically links relevant evidence to causal connections. Green arrows on your canvas mean the AI found a matching evidence card for that specific link. If external paper search was enabled during generation, academic papers from Semantic Scholar may also appear alongside curated evidence when you click a green arrow. You can use the Evidence Search page to explore curated evidence or find additional studies to support your model.

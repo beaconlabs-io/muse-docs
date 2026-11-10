@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Muse Documentation",
-  tagline: "Evidence-Based Impact Planning with Theory of Change",
+  tagline: "Evidence-Based Impact Planning with Logic Models",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://docs.muse.beaconlabs.io",
+  url: "https://docs.musecanvas.app",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -26,6 +26,12 @@ const config: Config = {
   projectName: "muse",
 
   onBrokenLinks: "throw",
+
+  // `future.v4` turns the MDX v1 compat layer off by default from 3.10 on.
+  // The docs rely on it: `:::info Title` admonitions and `## Heading {#id}`.
+  markdown: {
+    mdx1Compat: { comments: true, admonitions: true, headingIds: true },
+  },
 
   i18n: {
     defaultLocale: "en",
@@ -48,7 +54,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/beaconlabs-io/docs-muse/tree/main/",
+          editUrl: "https://github.com/beaconlabs-io/muse-docs/tree/main/",
         },
         blog: false,
         theme: {
@@ -95,7 +101,7 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://muse.beaconlabs.io",
+          href: "https://musecanvas.app",
           label: "Launch App",
           position: "right",
         },
@@ -127,11 +133,7 @@ const config: Config = {
           items: [
             {
               label: "Muse App",
-              href: "https://muse.beaconlabs.io",
-            },
-            {
-              label: "Dev App",
-              href: "https://dev.muse.beaconlabs.io",
+              href: "https://musecanvas.app",
             },
           ],
         },

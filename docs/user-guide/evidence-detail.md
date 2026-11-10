@@ -1,21 +1,23 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: Reading Evidence
 description: How to read and understand an evidence detail page in MUSE
 ---
 
 # Reading Evidence
 
-When you click on an evidence card in the search results, you're taken to the Evidence Detail page. This page shows you everything about a single research study — its findings, methodology, data sources, citations, and its blockchain verification history.
+When you click on an evidence card in the search results, you're taken to the Evidence Detail page. This page shows you everything about a single research study — its findings, methodology, data sources, and citations.
 
 Understanding how to read an evidence page will help you evaluate how well a study supports a specific step in your logic model.
 
 ## Getting to an Evidence Page
 
 - **From Search**: Click any evidence card on the [Evidence Search page](/docs/user-guide/evidence-search)
-- **Direct URL**: Evidence pages follow the pattern `muse.beaconlabs.io/evidence/[slug]`, where `[slug]` is the unique identifier for that study
+- **Direct URL**: Evidence pages follow the pattern `musecanvas.app/evidence/[slug]`, where `[slug]` is the unique identifier for that study
 
 ## The Page Header
+
+![An evidence detail page showing the title, author, publication date, version, and a star strength rating, with the research summary and results below.](/img/screenshots/en/evidence-detail.png)
 
 At the top of every evidence page you'll find:
 
@@ -88,20 +90,6 @@ The Citations section lists all the works referenced in this evidence entry. Cit
 ## Tags
 
 Tags are topic categories that describe the evidence. Examples include tags like "health", "education", "economic development", "gender equity", or "digital technology". Tags help you understand the domain and context of the evidence at a glance, and they are also searchable on the Evidence Search page.
-
-## Change Log
-
-At the bottom of the evidence page is the Change Log section. This shows the blockchain verification records for this evidence entry.
-
-Each record includes:
-
-- **EAS UID** — A unique identifier on the Ethereum Attestation Service (EAS) blockchain, which permanently and publicly records this evidence entry (clickable link to view on EAS)
-- **Timestamp** — The exact date and time the attestation was created
-- **Latest badge** — The most recent attestation is marked with a "Latest" badge
-
-:::info What Is an Attestation?
-An attestation is a cryptographic signature recorded on a public blockchain that says: "This evidence entry existed in this exact form at this point in time." It makes evidence tamper-resistant and independently verifiable — anyone can check the EAS UID on the blockchain to confirm the record is authentic.
-:::
 
 ## Evaluating Evidence Quality
 

@@ -1,12 +1,12 @@
 ---
 sidebar_position: 3
 title: Evidence in MUSE
-description: How peer-reviewed research evidence is structured, verified, and connected to your logic model
+description: How research evidence is structured, verified, and connected to your logic model
 ---
 
 # Evidence in MUSE
 
-Evidence is at the heart of MUSE. Every causal connection in your logic model can be supported by peer-reviewed research, making your Theory of Change more than just a diagram — it becomes a defensible, research-backed impact plan.
+Evidence is at the heart of MUSE. Every causal connection in your logic model can be supported by research evidence, making your logic model more than just a diagram — it becomes a defensible, research-backed impact plan.
 
 ## What is an Evidence Card?
 
@@ -81,30 +81,6 @@ When a submission is made, an automated process checks that all required fields 
 ### 3. Review and Approval
 
 A human reviewer checks the content for accuracy and relevance before the evidence is merged into the library.
-
-### 4. Blockchain Attestation
-
-Once approved, the evidence is permanently recorded on the blockchain (see below). This creates an immutable, time-stamped record that the evidence existed and was reviewed at a specific point in time.
-
-## Blockchain Verification
-
-Every piece of evidence in MUSE is verified through two complementary technologies:
-
-### IPFS Storage
-
-The full content of each Evidence Card is stored on **IPFS** (InterPlanetary File System) — a decentralized storage network. This produces a unique content hash that serves as a permanent, tamper-proof identifier. As long as anyone in the network holds the file, it remains accessible.
-
-### EAS Attestations
-
-An **EAS (Ethereum Attestation Service)** attestation is created for each verified piece of evidence on the Base Sepolia blockchain. This attestation records:
-
-- The IPFS hash of the evidence content
-- The date and time of attestation
-- The identity of the attesting party
-
-Together, IPFS and EAS ensure that the evidence in MUSE cannot be silently altered or removed after verification.
-
-For a non-technical introduction to these concepts, see the [Glossary](../reference/glossary).
 
 ## How Evidence Connects to Your Logic Model
 
