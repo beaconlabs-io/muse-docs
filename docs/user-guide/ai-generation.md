@@ -62,7 +62,7 @@ Below the text box, you may see a toggle labeled **"Search external academic pap
 This toggle is only shown on deployments where external paper search is enabled, so you may not see it on every environment. In a workspace with [private mode](./accounts-workspaces#private-mode) turned on, external paper search is not run.
 
 :::info About External Papers
-External papers are shown as **reference material only** — they are not scored by MUSE's AI and do not receive blockchain attestations. They supplement the curated evidence database with broader academic literature, including TLDR summaries and citation counts to help you quickly assess relevance.
+External papers are shown as **reference material only** — they are not scored by MUSE's AI. They supplement the curated evidence database with broader academic literature, including TLDR summaries and citation counts to help you quickly assess relevance.
 :::
 
 ### Step 5: (Optional) Enable Metrics and Recipe Generation

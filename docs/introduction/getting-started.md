@@ -16,7 +16,6 @@ MUSE (Modular Stack of Evidence) bridges the gap between research evidence and r
 - **Leverage AI** — Automatically generate logic models from a simple description of your intervention
 - **Link research evidence** — Connect research to support each step of your logic model
 - **Save, version, and share** — Keep logic models in a workspace, restore earlier versions, and share them with teammates or by link
-- **Trust the evidence** — Every curated evidence entry is stored on IPFS and attested on-chain through EAS, so it can be verified independently
 
 ## Who is MUSE For?
 

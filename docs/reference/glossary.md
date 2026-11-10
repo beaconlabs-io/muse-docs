@@ -18,14 +18,6 @@ The concrete actions taken by a program or intervention. Activities are the star
 
 ---
 
-### Attestation
-
-**Japanese**: アテステーション
-
-A cryptographic statement recorded on a blockchain that verifies a specific claim. In MUSE, attestations are created using the Ethereum Attestation Service (EAS) on the Base Sepolia network. Attestations provide a tamper-evident, publicly verifiable record that a piece of evidence has been reviewed and published. Each evidence file in the evidence repository receives an attestation on merge.
-
----
-
 ### Auto Layout
 
 **Japanese**: 自動レイアウト
@@ -66,14 +58,6 @@ The paragraph in a Measurement Recipe entry that describes *how* the data for a 
 
 ---
 
-### EAS
-
-**Japanese**: EAS（イーサリアム・アテステーション・サービス）
-
-Ethereum Attestation Service. The open protocol used by MUSE to create on-chain attestations. EAS provides a standardized schema for making verifiable claims on the Ethereum blockchain. MUSE uses EAS on the Base Sepolia test network to attest that evidence files have been validated and stored on IPFS.
-
----
-
 ### Edge
 
 **Japanese**: エッジ
@@ -94,7 +78,7 @@ The observed outcome or impact of an intervention as reported in a research stud
 
 **Japanese**: エビデンスカード
 
-A standardized format for presenting a single piece of research evidence in MUSE. Each Evidence Card captures the core finding of a study as an **Intervention → Indicator → Short-term Outcome** relationship, along with the effect category and strength-of-evidence rating. Evidence Cards can be attached to nodes on the canvas to ground a Logic Model in empirical research. Note: Evidence Cards are distinct from External Papers — curated evidence is scored by AI and backed by blockchain attestations, while external papers are shown as reference material only.
+A standardized format for presenting a single piece of research evidence in MUSE. Each Evidence Card captures the core finding of a study as an **Intervention → Indicator → Short-term Outcome** relationship, along with the effect category and strength-of-evidence rating. Evidence Cards can be attached to nodes on the canvas to ground a Logic Model in empirical research. Note: Evidence Cards are distinct from External Papers — curated evidence is scored by AI, while external papers are shown as reference material only.
 
 ---
 
@@ -102,7 +86,7 @@ A standardized format for presenting a single piece of research evidence in MUSE
 
 **Japanese**: 外部学術論文
 
-An academic paper retrieved from external databases (such as Semantic Scholar) that is displayed alongside curated evidence as reference material. External papers are not scored by MUSE's AI and do not receive blockchain attestations. They provide supplementary context from the broader academic literature, including TLDR summaries and citation counts to help users quickly assess relevance.
+An academic paper retrieved from external databases (such as Semantic Scholar) that is displayed alongside curated evidence as reference material. External papers are not scored by MUSE's AI. They provide supplementary context from the broader academic literature, including TLDR summaries and citation counts to help users quickly assess relevance.
 
 ---
 
@@ -127,14 +111,6 @@ Long-term societal change; the ultimate goal of an intervention. Impact sits at 
 **Japanese**: 中期アウトカム
 
 Medium-term changes resulting from short-term outcomes. In a Logic Model, Intermediate Outcomes represent the behavioral, social, or systemic shifts that occur after the immediate effects of an intervention take hold — for example, increased economic self-sufficiency following improved financial literacy. Intermediate Outcomes bridge Short-term Outcomes and long-term Impact.
-
----
-
-### IPFS
-
-**Japanese**: IPFS（惑星間ファイルシステム）
-
-InterPlanetary File System. A decentralized, peer-to-peer storage network used by MUSE to store evidence files. When evidence is attested, its MDX file is uploaded to IPFS via Pinata and the resulting content identifier (CID) is included in the on-chain attestation record. This ensures that evidence content is permanently accessible and cannot be altered after attestation.
 
 ---
 
@@ -222,7 +198,7 @@ Randomized Controlled Trial. The gold standard of experimental research, corresp
 
 **Japanese**: Semantic Scholar（セマンティック・スカラー）
 
-An AI-powered academic search engine developed by the Allen Institute for AI. MUSE can optionally search Semantic Scholar to find academic papers related to causal connections in your logic model. Papers from Semantic Scholar appear as reference material (External Papers) and are distinct from MUSE's curated, attested evidence.
+An AI-powered academic search engine developed by the Allen Institute for AI. MUSE can optionally search Semantic Scholar to find academic papers related to causal connections in your logic model. Papers from Semantic Scholar appear as reference material (External Papers) and are distinct from MUSE's curated evidence.
 
 ---
 

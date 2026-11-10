@@ -73,7 +73,7 @@ Each result appears as a card in the grid. Here's what you'll see on each card:
 
 ## Viewing Full Evidence
 
-Click on any evidence card to open the full Evidence Detail page for that study. There you'll find the complete research summary, methodology details, data sources, citations, and blockchain attestation records.
+Click on any evidence card to open the full Evidence Detail page for that study. There you'll find the complete research summary, methodology details, data sources, and citations.
 
 :::info How Evidence Links to Your Canvas
 When MUSE's AI generates a logic model, it searches this same database and automatically links relevant evidence to causal connections. Green arrows on your canvas mean the AI found a matching evidence card for that specific link. If external paper search was enabled during generation, academic papers from Semantic Scholar may also appear alongside curated evidence when you click a green arrow. You can use the Evidence Search page to explore curated evidence or find additional studies to support your model.
