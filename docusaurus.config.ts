@@ -34,7 +34,7 @@ const config: Config = {
   },
 
   i18n: {
-    defaultLocale: "en",
+    defaultLocale: "ja",
     locales: ["en", "ja"],
     localeConfigs: {
       en: {

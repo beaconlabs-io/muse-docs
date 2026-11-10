@@ -59,7 +59,7 @@ jobs:
       - name: Smoke test
         run: |
           # A fresh deploy can take a few seconds to propagate, so retry.
-          for path in / /docs/introduction/getting-started/ /ja/; do
+          for path in / /docs/introduction/getting-started/ /en/; do
             echo "GET https://docs.musecanvas.app${path}"
             curl --fail --silent --show-error --location \
               --retry 10 --retry-delay 6 --retry-all-errors \

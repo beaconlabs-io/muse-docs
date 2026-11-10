@@ -33,8 +33,8 @@ bun run write-translations     # Extract translatable strings into i18n/
 
 ## Internationalization
 
-- Default locale: **`en`**; additional locale: **`ja`** (`docusaurus.config.ts` → `i18n`)
-- Translated docs live under `i18n/ja/` (currently ~16 translated files); English is the source of truth
+- Default locale: **`ja`** (served at `/`); additional locale: **`en`** (served at `/en/`) (`docusaurus.config.ts` → `i18n`)
+- Translated docs live under `i18n/ja/` (currently ~16 translated files); English in `docs/` is still the source of truth and is what `/en/` serves
 - After adding/editing docs, run `bun run write-translations` to sync translation stubs
 
 ## Gotchas
