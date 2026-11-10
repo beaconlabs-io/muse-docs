@@ -42,6 +42,8 @@ Click **Logic models** in the sidebar to list the logic models in the active wor
 
 The list follows the workspace selected in the switcher at the top of the sidebar. Switch workspaces to see the logic models stored elsewhere.
 
+![The Logic models page listing the saved logic models of the workspace as cards, each with its title, last update, an Owner label, and a Link label when link sharing is on.](/img/screenshots/en/logic-models-list.png)
+
 ## Version History
 
 Every save is kept. To look back:
@@ -49,6 +51,8 @@ Every save is kept. To look back:
 1. Open a saved logic model and click the **History** (clock) icon in the canvas header.
 2. The panel lists each version with its number, date, and author.
 3. Click **Restore** on a version to bring it back.
+
+![The Version history panel open on the right of the canvas, listing Version 1 with its date and author and a Restore button.](/img/screenshots/en/version-history.png)
 
 Restoring does not delete anything: the chosen version is copied as the newest version. If the canvas has unsaved changes, MUSE asks for confirmation first because they will be replaced.
 
@@ -63,6 +67,8 @@ The owner of a saved logic model can share it by clicking the **Share** icon in 
 | **People** | Individual members of the workspace | Can view / Can edit |
 | **Everyone in the workspace** | All members of the workspace the model is stored in | No access / Can view / Can edit |
 | **Anyone with the link** | Anyone who has the link, with no sign-in | On / Off (view only) |
+
+![The Share dialog with its three settings: People, with a member selector and a role; Everyone in the workspace, set to No access; and Anyone with the link, switched on and showing the link with a Copy link button.](/img/screenshots/en/share-dialog.png)
 
 ### Sharing with Workspace Members
 

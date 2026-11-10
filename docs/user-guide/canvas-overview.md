@@ -29,7 +29,7 @@ Next to the tabs is the logic model's title. Click it to rename a saved logic mo
 
 The toolbar on the right of the header shows actions relevant to whichever tab is active.
 
-![Canvas view with the Canvas / Recipe tabs at the top, showing a populated logic model. The Recipe tab shows an amber stale icon because the logic model has changed since the recipe was last generated.](/img/screenshots/en/canvas-recipe-tabs.png)
+![The canvas with a saved logic model open. The header shows the Canvas and Recipe tabs, the title, and the toolbar: Generate Logic Model, Add Node, Save, History, Share, the tour button, and More.](/img/screenshots/en/canvas-with-evidence.png)
 
 ## The Toolbar
 
@@ -72,6 +72,8 @@ Each of these is explained in [Saving & Sharing](./saving-sharing#sharing).
 ### The "More" Menu
 
 Click **More** to access additional actions, grouped by section:
+
+![The More menu open, grouped into Canvas (Auto Layout, Export Image, Export JSON), Recipe (Regenerate, Download HTML), and Danger (Clear All).](/img/screenshots/en/more-menu.png)
 
 **Canvas**
 
